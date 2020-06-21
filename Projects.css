@@ -46,7 +46,7 @@ nav{
     grid-column: 2/3;
 }
 #logo:hover{
-    color: ;
+    color: lightgray;
 }
 #navbar ul{
     list-style: none;
@@ -189,6 +189,72 @@ img{
     max-width: 100%;
     max-height: 70%;
     object-fit: contain;
+}
+.carousel{
+    position: relative;
+    height: 600px;
+    max-width: 1680px;
+    width: 80%;
+    margin: auto;
+}
+.c__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel__track-container{
+    background: lightgreen;
+/*     padding: 10px; */
+    height: 100%;
+    position: relative;
+}
+.carousel__track{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.carousel__item{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+.carousel__button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+.carousel__button--left{
+    left: -30px;
+}
+.carousel__button--right{
+    right: -40px;
+}
+.carousel__button img{
+    width: 20px;
+    height: 20px;
+}
+.carousel__nav{
+/*     background: green; */
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+.carousel__indicator{
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: lightgray;
+    margin: 0 15px;
+}
+
+.carousel__indicator.current-slide{
+    background: white;
 }
 @media only screen and (max-width:1000px){
     .pinfo{
