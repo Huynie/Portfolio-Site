@@ -44,7 +44,7 @@ nav{
     grid-column: 2/3;
 }
 #logo:hover{
-    color: ;
+    color: lightgray;
 }
 #navbar ul{
     list-style: none;

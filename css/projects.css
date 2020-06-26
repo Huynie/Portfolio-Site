@@ -92,32 +92,10 @@ img{
     object-fit: contain;
 /*     margin: auto; */
 }
-.imgNav{
-    background-color: black;
-    max-width: 1680px;
-    height: 50px;
-    margin: 0 auto;
-
-    display: grid;
-    grid-template-columns: 30% 1fr 2fr 1fr 30%;
-}
 .imgBox{
     max-width: 1680px;
 /*     background-color: bisque; */
     margin: auto;
-}
-.arrows{
-    background-color: mediumpurple;
-    width: 30px;
-    height: 30px;
-    background-image: url("/images/AS White.png");
-    grid-column: 2/3;
-}
-.imgCounter{
-    background-color: mediumaquamarine;
-    width: 30px;
-    height: 30px;
-    background-image: url("TW White.png");
 }
 .pinfo{
 /*     background-color: teal; */
