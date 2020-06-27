@@ -1,10 +1,7 @@
-$base-color: #181818;
-$font-stack: "Roboto";
-$font-color: #cccccc;
-$hover-color: #ffffff;
+@import'base';
+@import 'navbar';
 *{
-    margin:0;
-    padding: 0;
+    background-color: unset;
 }
 body{
     background-image: url('../Assets/images/Portal.png');
@@ -12,83 +9,38 @@ body{
     background-repeat: no-repeat;
     background-color: $base-color;
 }
-.container{
-    /*width: 80%;*/
-    max-width: 1680px;
-    margin: auto;
-    overflow: hidden;
-}
 img{
     align-self: center right;
     align-items: center right;
     align-content: center right;
 }
-#navbar{
-    background: black;
-    color: $font-color;
+
+nav{
     height: 220px;
-    margin:0;
-    padding:0;
     
     h1{
         width: 180px;
         height: 95px;
         left: 221px;
         top: 59px;
-
-        font-family: $font-stack;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 48px;
+    
+        font: normal normal 700 48px $font-stack;
         line-height: 87.19%;
-        /* or 42px */
         letter-spacing: 0.31em;
-
-        padding-top: 55px;
-        padding-left: 2em;
-        float: left;
-    }
-    h2{
-        font-family: $font-stack;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 48px;
-        line-height: 87.19%;
-        /* or 42px */
-        letter-spacing: 0.31em;
-
-        padding-top: 55px;
-        padding-left: 2em;
+        padding-left: 1em;
         float: left;
     }
     ul{
-        list-style: none;
-        word-spacing: 10px;
-        padding-top: 90px;
-        padding-right: 4.5em;
-        display: inline;
-        float: right;
-    }
-    li{
-        color: $font-color;
-        display: inline;
-        padding-right: 2em;
-    }
-    a{
-        color: $font-color;
-        text-decoration: none;
-        font-family: $font-stack;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 12px;
+        font: normal normal 300 12px $font-stack;
         letter-spacing: 0.34em;
-    }
-    a:hover{
-        color: $hover-color;
+
+        li{
+            padding-right: 2.5rem;
+        }
     }
 }
 @media only screen and (max-width:600px){
-    #navbar{ 
+    nav{ 
         ul{
             width: 100%;
             height: 100%;

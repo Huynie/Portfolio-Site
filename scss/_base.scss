@@ -1,0 +1,19 @@
+$base-color: #080808;
+$font-stack: "Roboto";
+$font-color: #cccccc;
+$hover-color: #ffffff;
+
+*{
+    background-color: $base-color;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: auto;
+    color: $font-color;
+}
+%container{
+    max-width: 1680px;
+    margin: auto;
+    overflow: hidden;
+}

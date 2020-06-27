@@ -1,0 +1,59 @@
+@import 'base';
+
+hr{
+    @extend %container;
+    
+    background-color: #464646;
+    height: 0.1px;
+    border-width: 0;
+    border: 0;
+}
+.logo{
+    text-decoration: none;
+    text-align: left;
+    color: $hover-color;
+    width: 85px;
+    font: normal normal 500 24px $font-stack;
+    letter-spacing: 0.3em;
+    line-height: 80%;
+    word-wrap: break-word;
+    grid-column: 2/3;
+
+    &:hover{
+        color: $font-color;
+        cursor: pointer;
+    }
+}
+nav{
+    @extend %container;
+
+    background: $base-color;
+    height: 80px;
+    width: auto;
+    display: grid;
+    grid-template-columns: 3% 1fr 1fr 3%;
+    align-items: center;
+
+    ul{
+        list-style: none;
+        word-spacing: 10px;
+        grid-column: 3/4;
+        justify-self: end;
+        font: normal normal 350 11px $font-stack;
+        letter-spacing: 0.25em;
+
+        li{
+            padding-left: 1em;
+            display: inline;
+
+            a{
+                color: $font-color;
+                text-decoration: none;
+            
+                &:hover{
+                    color: $hover-color;
+                }
+            }
+        }
+    }
+}
