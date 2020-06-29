@@ -5,17 +5,15 @@
         <meta name="Description" content="Projects Template">
         <meta name="keywords" content="Huy Chau">
         <link rel="stylesheet" href="../css/projects.css">
-        <script defer src="../js/Main.js"></script>
+        <!-- <script defer src="../js/lightbox.js"></script> -->
     </head>
     <header>
         <nav>
-            <a class="logo" id="logo" href="./home.html">
-                Huy Chau
-            </a>
+            <a class="logo" href="./home.html">Huy Chau</a>
             <ul>
-                <li><a id="menu" href="./gallery.html"  style="color:white">Work<a></li>
-                <li><a id="menu" href="./about.html">About<a></li>
-                <li><a id="menu" href="#">Thoughts<a></li>
+                <li><a href="./gallery.html"  style="color:white">Work<a></li>
+                <li><a href="./about.html">About<a></li>
+                <li><a href="#">Thoughts<a></li>
             </ul>
         </nav>
         <hr>
@@ -24,19 +22,19 @@
     <body>
         <br>
         <div class="carousel">
-            <button class="carousel__button carousel__button--left">
+            <button class="carousel__button carousel__button--left is-hidden">
                 <img src="../Assets/images/Arrow_L.png" alt="">
             </button>
 
             <div class="carousel__track-container">
                 <ul class="carousel__track">
-                    <li class="carousel__item">
+                    <li class="carousel__slide current-slide">
                         <img class="c__img" src="../Assets/images/Portal.png" alt="">
                     </li>
-                    <li class="carousel__item">
+                    <li class="carousel__slide">
                         <img class="c__img" src="../Assets/images/Post-Apocalyptic.jpg" alt="">
                     </li>
-                    <li class="carousel__item">
+                    <li class="carousel__slide">
                         <img class="c__img" src="../Assets/images/Prison.jpg" alt="">
                     </li>
                 </ul>
@@ -47,7 +45,7 @@
             </button>
 
             <div class="carousel__nav">
-                <button class="carousel__indicator current-item"></button>
+                <button class="carousel__indicator current-slide"></button>
                 <button class="carousel__indicator"></button>
                 <button class="carousel__indicator"></button>
             </div>
@@ -63,4 +61,5 @@
             <div class="pdate">2019</div>
         </div>
     </body>
+    <script src="../js/carousel.js"></script>
 </html>
