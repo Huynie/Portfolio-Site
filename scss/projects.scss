@@ -1,16 +1,138 @@
 @import 'base';
 @import 'navbar';
 
-img{
+#lightbox{
+    position: fixed;
+    z-index: 1000;
+    top:0;
     width: 100%;
     height: 100%;
-    object-fit: contain;
-/*     margin: auto; */
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+
+    &.active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    & img{
+        max-width: 2000px;
+        max-height: 1000px;
+        object-fit: cover;
+    }
 }
-.imgBox{
+.carousel{
+    position: relative;
+    height: 55vh;
     max-width: 1680px;
-/*     background-color: bisque; */
-    margin: auto;
+    width: 100%;
+    margin: 10px auto;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    &__button{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 50px;
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        outline: none;
+        z-index: 100;
+
+        img{
+            width: 20px;
+            height: 20px;
+            background: transparent;
+        }
+        &--left{
+            top: 745px;
+            left: 600px;
+        }
+        &--right{
+            top: 745px;
+            right: 600px;
+        }
+    }
+    &__track-container{
+        background: lightgreen;
+        /* padding: 10px; */
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    &__track{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: relative;
+        height: 100%;
+        transition: transform 250ms ease-in;
+    }
+    &__slide{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    &__nav{
+        /* background: green; */
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+        /* display: grid;
+        grid-template-columns: 3% 1fr 1fr 3%; */
+        align-items: center;
+        /* &__button{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 50px;
+            background: transparent;
+            border: 0;
+            cursor: pointer;
+    
+            img{
+                width: 20px;
+                height: 20px;
+            }
+            &--left{
+                top: 630px;
+                left: 150px;
+            }
+            &--right{
+                top: 630px;
+                right: 150px;
+            }
+        } */
+    }
+    &__indicator{
+        background: url(../Assets/images/slash.svg);
+        background-repeat: no-repeat;
+        opacity: .4;
+        border: 0;
+        width: 20px;
+        height: 25px;
+        /* background: transparent; */
+        margin: 0 20px;
+        cursor: pointer;
+        outline: none;
+        
+        /* img{
+            width: 20px;
+            height: 20px;
+            object-fit: cover;
+        } */
+    }
+    &__indicator.current-slide{
+        background: url(../Assets/images/slash.svg);
+        background-repeat: no-repeat;
+        opacity: 1;
+    }
 }
 .pinfo{
 /*     background-color: teal; */
@@ -64,100 +186,6 @@ img{
     justify-self: center;
     align-self: center;
 }
-#lightbox{
-    position: fixed;
-    z-index: 1000;
-    top:0;
-    width: 100%;
-    height: 100%;
-    background-color: $base-color;
-    display: none;
-
-    &.active{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    &img{
-        max-width: 100%;
-        max-height: 70%;
-        object-fit: contain;
-    }
-}
-.c__img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.carousel{
-    position: relative;
-    height: 600px;
-    max-width: 1680px;
-    width: 80%;
-    margin: auto;
-
-    &__track-container{
-        background: lightgreen;
-        /* padding: 10px; */
-        height: 100%;
-        position: relative;
-        overflow: hidden;
-    }
-    &__track{
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        position: relative;
-        height: 100%;
-        transition: transform 250ms ease-in;
-    }
-    &__slide{
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 100%;
-    }
-    &__button{
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        height: 50px;
-        background: transparent;
-        border: 0;
-        cursor: pointer;
-
-        &--left{
-            left: -30px;
-        }
-        &--right{
-            right: -40px;
-        }
-    }
-    &__button{
-        img{
-            width: 20px;
-            height: 20px;
-        }
-    }
-    &__nav{
-        /* background: green; */
-        display: flex;
-        justify-content: center;
-        padding: 10px 0;
-    }
-    &__indicator{
-        border: 0;
-        border-radius: 50%;
-        width: 15px;
-        height: 15px;
-        background: rgba(255, 255, 255, 0.3);
-        margin: 0 15px;
-        cursor: pointer;
-    }
-    &__indicator.current-slide{
-        background: rgba(255, 255, 255, 1);
-    }
-}
 .is-hidden{ display: none;}
 
 @media only screen and (max-width:1000px){
@@ -195,5 +223,12 @@ img{
         display: initial;
         font: normal normal 100 65px Roboto;
         align-self: center;
+    }
+    .carousel{
+        height: fit-content;
+        img{
+        min-width: 600px;
+        object-fit: scale-down;;
+        }
     }
 }

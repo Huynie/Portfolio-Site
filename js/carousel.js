@@ -1,5 +1,7 @@
 const track = document.querySelector('.carousel__track');
 const slides = Array.from(track.children);
+/* const nextButton = document.querySelector('.carousel__nav__button--right');
+const prevButton = document.querySelector('.carousel__nav__button--left'); */
 const nextButton = document.querySelector('.carousel__button--right');
 const prevButton = document.querySelector('.carousel__button--left');
 const dotsNav = document.querySelector('.carousel__nav');
@@ -75,7 +77,7 @@ nextButton.addEventListener('click', e => {
 // clicking nav indicator (the little dots), move to that slide
 dotsNav.addEventListener('click' , e => {
     // what indicator was clicked on?
-    const targetDot = e.target.closest('button');
+    const targetDot = e.target.closest('input');
 
     if (!targetDot) return;
 
