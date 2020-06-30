@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass scss/style.scss css/style.css-w"
+    "compile:sass": "node-sass scss/style.scss css/style.css -w"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Huynie/Portfolio-Site/issues"
   },
-  "homepage": "https://github.com/Huynie/Portfolio-Site#readme"
+  "homepage": "https://github.com/Huynie/Portfolio-Site#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
 }
