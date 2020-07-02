@@ -1,9 +1,68 @@
+// MOBILE
+@media only screen and (max-width:600px){
+    nav{
+        ul{
+            width: 100%;
+            height: 100%;
+            float: none;
+            margin: 20px auto;
+            align-self: flex-start;
+        }
+    }
+    .carousel{
+        max-height: 15vh;
+    }
+}
 @media only screen and (max-width:1000px){
+    .pinfo{
+        height: auto;
+        margin: 30px auto;
+        padding: 0;
+    
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 0.5fr 2fr 0.5fr;
+    }
+    .ptitle{
+        padding: 0;
+        margin: 0;
+        align-self: end;
+    }
+    .desc{
+        max-width: 1000ch;
+        font: normal normal 300 11px Roboto;
+        margin-left: 30px;
+        margin-top: 8px;
+        grid-column: 1/3;
+    }
+    .pdate{
+        font: normal normal 200 30px Roboto;
+        max-width: 50px;
+        margin: 0;
+        justify-self: end;
+        align-self: flex-start;
+        grid-column: 2/3;
+    }
+    .slash{
+        display: initial;
+        font: normal normal 100 65px Roboto;
+        align-self: center;
+    }
+    .carousel{
+        max-height: 30vh;
+        /* width: 50vw; */
+        img{}
+        &__button{
+        }
+    }
+}
+@media only screen and (max-width:1150px){
     nav{ 
         ul{
             margin: 30px auto;
             align-self: flex-start;
             display: initial;
+            
         }
     }
     #page{
@@ -47,38 +106,5 @@
         font: normal normal 300 31.5px Roboto;
         letter-spacing: 0.2em;
     }
-    .pinfo{
-        height: auto;
-        margin: 30px auto;
-        padding: 0;
     
-        display: grid;
-        grid-template-columns: 70% 30%;
-        grid-template-rows: 0.5fr 2fr 0.5fr;
-    }
-    .ptitle{
-        padding: 0;
-        margin: 0;
-        align-self: end;
-    }
-    .desc{
-        max-width: 1000ch;
-        font: normal normal 300 11px Roboto;
-        margin-left: 30px;
-        margin-top: 8px;
-        grid-column: 1/3;
-    }
-    .pdate{
-        font: normal normal 200 30px Roboto;
-        max-width: 50px;
-        margin: 0;
-        justify-self: end;
-        align-self: flex-start;
-        grid-column: 2/3;
-    }
-    .slash{
-        display: initial;
-        font: normal normal 100 65px Roboto;
-        align-self: center;
-    }
 }

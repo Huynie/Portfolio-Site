@@ -4,3 +4,13 @@
 @import 'about';
 @import 'gallery';
 @import 'projects';
+@import 'mobile';
+*{
+    background-color: $base-color;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: auto;
+    color: $font-color;
+}

@@ -1,6 +1,4 @@
-@import 'base';
-@import 'navbar';
-
+/* ABOUT */
 .light{
     font: normal normal 300 11px Roboto;
     letter-spacing: 0.25em;
@@ -171,55 +169,5 @@
 
     &:hover{
         color: white;
-    }
-}
-@media only screen and (max-width:1150px){
-    nav{ 
-        ul{
-            margin: 30px auto;
-            align-self: flex-start;
-            display: initial;
-        }
-    }
-    #page{
-        display: initial;
-    }
-    #profile{
-        margin: auto;
-        padding: 0 0 0 50px;
-        justify-self: center;
-    }
-    #about{
-        margin-top: 100px;
-        margin-right: 80px;
-    }
-    #experience{
-        width: auto;
-        max-width: 580px;
-        padding: 0;
-        margin: auto;
-        float: left;
-        float: right;
-    }
-    #date{
-        margin-left: 50px;
-    }
-    #academics{
-        width: 700px;
-        float: left;
-        margin: auto;
-        grid-template-columns: 22% 78%;
-        grid-auto-rows: minmax(50px, auto);
-    }
-    #school{
-        margin-top: 5px;
-    }
-    #date2{
-        margin-left: 50px;
-        line-height: 10%;
-        letter-spacing: 0.2em;
-        width: 60px;
-        font: normal normal 300 31.5px Roboto;
-        letter-spacing: 0.2em;
     }
 }

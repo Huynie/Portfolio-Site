@@ -1,5 +1,7 @@
-@import 'base';
-
+/* NAVIGATION */
+:focus{
+    outline: none;
+}
 hr{
     @extend %container;
     
@@ -23,6 +25,10 @@ hr{
         color: $font-color;
         cursor: pointer;
     }
+    &:focus{
+        color: $font-color;
+        cursor: pointer;
+    }
 }
 nav{
     @extend %container;
@@ -34,6 +40,20 @@ nav{
     grid-template-columns: 3% 1fr 1fr 3%;
     align-items: center;
 
+    &.home{
+        height: 220px;
+    }
+    h1{
+        width: 180px;
+        height: 95px;
+        left: 221px;
+        top: 59px;
+        font: normal normal 700 48px $font-stack;
+        line-height: 87.19%;
+        letter-spacing: 0.31em;
+        padding-left: 1em;
+        float: left;
+    }
     ul{
         list-style: none;
         word-spacing: 10px;
@@ -42,18 +62,30 @@ nav{
         font: normal normal 350 11px $font-stack;
         letter-spacing: 0.25em;
 
-        li{
-            padding-left: 1em;
-            display: inline;
 
-            a{
-                color: $font-color;
-                text-decoration: none;
-            
-                &:hover{
-                    color: $hover-color;
-                }
-            }
+    }
+    &.ulHome{
+        font: normal normal 300 12px $font-stack;
+        letter-spacing: 0.34em;
+    }
+    li{
+        padding-left: 1em;
+        display: inline;
+
+        
+    }
+    &.liHome{
+        padding-right: 2.5rem;
+    }
+    a{
+        color: $font-color;
+        text-decoration: none;
+    
+        &:hover{
+            color: $hover-color;
+        }
+        &:focus{
+            color: $hover-color;
         }
     }
 }

@@ -1,6 +1,4 @@
-@import 'base';
-@import 'navbar';
-
+/* PROJECTS */
 #lightbox{
     position: fixed;
     z-index: 1000;
@@ -9,7 +7,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, .8);
     display: none;
-
+    
     &.active{
         display: flex;
         justify-content: center;
@@ -19,6 +17,7 @@
         max-width: 2000px;
         max-height: 1000px;
         object-fit: cover;
+        overflow: hidden;
     }
 }
 .carousel{
@@ -186,49 +185,5 @@
     justify-self: center;
     align-self: center;
 }
-.is-hidden{ display: none;}
-
-@media only screen and (max-width:1000px){
-    .pinfo{
-/*             max-width: 1680px; */
-        height: auto;
-        margin: 30px auto;
-        padding: 0;
-    
-        display: grid;
-        grid-template-columns: 70% 30%;
-        grid-template-rows: 0.5fr 2fr 0.5fr;
-    }
-    .ptitle{
-        padding: 0;
-        margin: 0;
-        align-self: end;
-    }
-    .desc{
-        max-width: 1000ch;
-        font: normal normal 300 11px Roboto;
-        margin-left: 30px;
-        margin-top: 8px;
-        grid-column: 1/3;
-    }
-    .pdate{
-        font: normal normal 200 30px Roboto;
-        max-width: 50px;
-        margin: 0;
-        justify-self: end;
-        align-self: flex-start;
-        grid-column: 2/3;
-    }
-    .slash{
-        display: initial;
-        font: normal normal 100 65px Roboto;
-        align-self: center;
-    }
-    .carousel{
-        height: fit-content;
-        img{
-        min-width: 600px;
-        object-fit: scale-down;;
-        }
-    }
+.is-hidden{ display: none;
 }
