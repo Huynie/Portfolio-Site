@@ -9,6 +9,7 @@ images.forEach(image => {
         lightbox.classList.add('active')
         const img = document.createElement('img')
         img.src = image.src
+        console.log(img.src)
         while (lightbox.firstChild){   //removes prev image clicked on from lightbox
             lightbox.removeChild(lightbox.firstChild)
         }
