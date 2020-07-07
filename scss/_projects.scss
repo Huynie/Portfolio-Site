@@ -23,6 +23,7 @@
 .carousel{
     position: relative;
     height: 55vh;
+    min-height: 200px;
     max-width: 1680px;
     width: 100%;
     margin: 10px auto;
@@ -59,7 +60,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         justify-items: center;
-        margin: auto;
+        margin: 10px auto;
         &__button{
             background: transparent;
             border: 0;
@@ -68,10 +69,17 @@
             img{
                 width: 25px;
                 height: 25px;
+                opacity: .4;
             }
             &--left{
             }
             &--right{
+            }
+            &:hover{
+                img{
+                    opacity: 1;
+                }
+
             }
         }
     }
@@ -129,16 +137,18 @@
 /*     background-color: thistle; */
 }
 .desc{
-    color: $font-color;
-    font: normal normal 300 12px Roboto;
-    letter-spacing: 0.4em;
-    line-height: 1.5em;
-    
     justify-self: center;
     align-self: start;
     max-width: 600px;
-/*     margin: 50px; */
-/*     background-color: green; */
+    padding-top: 15px;
+    &__track{
+    }
+    &__text{
+        color: $font-color;
+        font: normal normal 300 12px Roboto;
+        letter-spacing: 0.4em;
+        line-height: 1.5em;
+    }
 }
 .pdate{
     font: normal normal 300 40px Roboto;
@@ -154,6 +164,7 @@
 }
 .slash{
 /*     background-color: indianred; */
+    color: rgb(139, 139, 139);
     font: normal normal 100 100px Roboto;
     justify-self: center;
     align-self: center;
@@ -161,4 +172,7 @@
 .is-hidden{ 
     opacity: 0;
     cursor: default;
+}
+.hideDesc-text{
+    display: none;
 }

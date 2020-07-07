@@ -10,7 +10,7 @@
         }
     }
     .carousel{
-        max-height: 15vh;
+        height: 10vh;
     }
 }
 @media only screen and (max-width:1000px){
@@ -49,22 +49,10 @@
         align-self: center;
     }
     .carousel{
-        max-height: 30vh;
-        /* width: 50vw; */
-        img{}
-        &__button{
-        }
+        max-height: 40vh;
     }
 }
 @media only screen and (max-width:1150px){
-    nav{ 
-        ul{
-            margin: 30px auto;
-            align-self: flex-start;
-            display: initial;
-            
-        }
-    }
     #page{
         display: initial;
     }
