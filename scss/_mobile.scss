@@ -12,6 +12,10 @@
     .carousel{
         height: 10vh;
     }
+    .slash img{
+        /* height: 10%; */
+        width: 10%;
+    }
 }
 @media only screen and (max-width:1000px){
     .pinfo{
@@ -43,10 +47,10 @@
         align-self: flex-start;
         grid-column: 2/3;
     }
-    .slash{
-        display: initial;
-        font: normal normal 100 65px Roboto;
+    .slash img{
+        width: 50%;
         align-self: center;
+        justify-self: left;
     }
     .carousel{
         max-height: 40vh;

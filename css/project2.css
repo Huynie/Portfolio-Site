@@ -182,19 +182,19 @@ margin: 10px auto; }
   background: url(../Assets/images/slash.svg);
   /* background: coral; */
   background-repeat: no-repeat;
-  opacity: .4;
+  opacity: .5;
   border: 0;
-  width: 25px;
-  height: 25px;
+  width: 50px;
+  height: 50px;
   /* background: transparent; */
-  margin: 0 20px;
+  /* margin: 0 20px; */
   cursor: pointer;
   outline: none;
 }
 .carousel__nav__indicator input img{
-  width: 10px;
-  height: 10px;
-  /* object-fit: cover; */
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
   }
   .carousel__nav__indicator.current-slide {
     background: url(../Assets/images/slash.svg);

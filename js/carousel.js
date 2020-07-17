@@ -7,6 +7,12 @@ const prevButton = document.querySelector('.carousel__nav__button--left');
 const dotsNav = document.querySelector('.carousel__indicContainer');
 const dots = Array.from(dotsNav.children);
 
+
+//Projects with only 1 image
+if (slides.length === 1) {
+    const carouselNav = document.querySelector('.carousel__nav');
+    carouselNav.classList.add('is-hidden');
+}
 const slideWidth = slides[0].getBoundingClientRect().width;
 
 const setSlidePosition = (slide, index) => {
@@ -26,11 +32,16 @@ const updateDots = (currentDot, targetDot) => {
     targetDot.classList.add('current-slide');
 }
 
-const updateDesc = (currentDesc, targetDesc) => {
-    currentDesc.classList.remove('current-slide');
-    currentDesc.classList.add('hideDesc-text')
-    targetDesc.classList.add('current-slide');
-    targetDesc.classList.remove('hideDesc-text')
+const updateDesc = (currentDesc, targetDesc,) => {
+    if (currentDesc.length > 1) {
+        currentDesc.classList.remove('current-slide');
+        currentDesc.classList.add('hideDesc-text')
+        targetDesc.classList.add('current-slide');
+        targetDesc.classList.remove('hideDesc-text');
+    } else {
+        return
+    }
+    
 }
 const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
     if (targetIndex === 0) {
@@ -45,6 +56,10 @@ const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
     }
 }
 
+/* Const hideNav = (slides, prevButton, nextButton, targetIndex) => {
+    if(targetIndex === )
+}
+ */
 // clicking left, move slide left
 prevButton.addEventListener('click', e => {
     const currentSlide = track.querySelector('.current-slide');
@@ -65,7 +80,7 @@ prevButton.addEventListener('click', e => {
 nextButton.addEventListener('click', e => {
     const currentSlide = track.querySelector('.current-slide');
     const nextSlide = currentSlide.nextElementSibling;
-    const amountToMove = nextSlide.style.left;
+    /* const amountToMove = nextSlide.style.left; */
     const currentDot = dotsNav.querySelector('.current-slide');
     const nextDot = currentDot.nextElementSibling;
     const nextIndex = slides.findIndex(slide => slide === nextSlide);
