@@ -3,6 +3,21 @@ $font-stack: "Roboto";
 $font-color: #cccccc;
 $hover-color: #ffffff;
 
+::-webkit-scrollbar{
+    width: 10px;
+
+    &-track{
+        background: rgb(34, 34, 34);
+    }
+    &-thumb{
+        background: rgb(82, 82, 82);
+
+        &:hover{
+            background: gray;
+        }
+    }
+}
+
 %container{
     max-width: 1680px;
     margin: auto;

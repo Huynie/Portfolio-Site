@@ -1,3 +1,12 @@
+::-webkit-scrollbar {
+  width: 10px; }
+  ::-webkit-scrollbar-track {
+    background: #222222; }
+  ::-webkit-scrollbar-thumb {
+    background: #525252; }
+    ::-webkit-scrollbar-thumb:hover {
+      background: gray; }
+
 hr, nav, .gallery {
   max-width: 1680px;
   margin: auto;
@@ -36,7 +45,8 @@ nav {
   width: auto;
   display: grid;
   grid-template-columns: 3% 1fr 1fr 3%;
-  align-items: center; }
+  align-items: center;
+  overflow: hidden; }
   nav.home {
     height: 220px; }
   nav h1 {
@@ -85,6 +95,7 @@ nav {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    overflow: hidden;
     animation: zoom 10s linear; }
 
 @keyframes zoom {
@@ -264,13 +275,6 @@ nav {
   grid-template-columns: 50% 50%;
   column-gap: 3px;
   row-gap: 3px; }
-  .gallery li {
-    list-style: none;
-    text-decoration: none;
-    overflow: hidden; }
-  .gallery a {
-    /* background: green; */
-    position: relative; }
   .gallery iframe {
     height: 100%;
     width: 100%;
@@ -279,15 +283,18 @@ nav {
             outline: none;
         } */ }
 
-.zoom {
-  display: block;
-  transition: transform .2s;
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  z-index: 0; }
-  .zoom:hover {
+.overlay {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .overlay:hover .text {
+    opacity: 1;
+    z-index: 1; }
+  .overlay:hover .zoom {
     opacity: .5;
+    z-index: 0;
     /* IE 9 */
     -ms-transform: scale(1.05);
     /* Safari 3-8 */
@@ -295,33 +302,20 @@ nav {
     transform: scale(1.05); }
 
 .text {
-  max-width: 840px;
-  width: 42vw;
-  display: block;
   position: absolute;
   background: transparent;
   text-align: center;
-  justify-items: center;
-  margin-right: 500px;
-  padding-left: 20px;
-  padding-right: 20px;
   color: #ffffff;
-  font: normal normal 500 25px Roboto;
-  letter-spacing: .3em;
-  top: 50%;
-  z-index: 1;
-  opacity: 1; }
+  font: normal normal 400 20px Roboto;
+  letter-spacing: .5em;
+  opacity: 0; }
 
-.wrap {
-  position: relative;
-  background: pink; }
-
-.overlay {
-  overflow: hidden;
-  position: relative;
-  /* background-color: #008CBA;  */ }
-  .overlay:hover .text {
-    opacity: 1; }
+.zoom {
+  transition: transform .2s;
+  width: 100%;
+  height: 250px;
+  min-width: 250px;
+  object-fit: cover; }
 
 /* PROJECTS */
 #lightbox {
@@ -474,12 +468,6 @@ nav {
   display: none; }
 
 @media only screen and (max-width: 600px) {
-  nav ul {
-    width: 100%;
-    height: 100%;
-    float: none;
-    margin: 20px auto;
-    align-self: flex-start; }
   .carousel {
     height: 10vh; }
   .slash img {

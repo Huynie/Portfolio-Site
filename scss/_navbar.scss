@@ -39,6 +39,7 @@ nav{
     display: grid;
     grid-template-columns: 3% 1fr 1fr 3%;
     align-items: center;
+    overflow: hidden;
 
     &.home{
         height: 220px;
