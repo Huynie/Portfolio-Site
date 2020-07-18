@@ -73,13 +73,25 @@ nav {
       color: #ffffff; }
 
 /* HOME */
-.landing {
-  background-image: url("../Assets/images/Portal.png");
+.autoSlides {
+  z-index: 0;
+  background-color: green;
   background-position: center;
   height: 100vh;
   width: 100vw;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  overflow: hidden; }
+  .autoSlides__slides {
+    /* display: none; */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    animation: zoom 10s linear; }
+
+@keyframes zoom {
+  from {
+    transform: scale(1, 1); }
+  to {
+    transform: scale(1.2, 1.2); } }
 
 /* ABOUT */
 .light {
@@ -248,17 +260,17 @@ nav {
 
 /* GALLERY */
 .gallery {
-  /* max-width: 1000px; */
-  /*     margin: 2px auto; */
-  /* max-height: 200px; */
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-column-start: auto;
   column-gap: 3px;
-  /* row-gap: 1px; */ }
+  row-gap: 3px; }
   .gallery li {
     list-style: none;
-    text-decoration: none; }
+    text-decoration: none;
+    overflow: hidden; }
+  .gallery a {
+    /* background: green; */
+    position: relative; }
   .gallery iframe {
     height: 100%;
     width: 100%;
@@ -268,16 +280,48 @@ nav {
         } */ }
 
 .zoom {
+  display: block;
   transition: transform .2s;
   width: 100%;
   height: 250px;
-  object-fit: cover; }
+  object-fit: cover;
+  z-index: 0; }
   .zoom:hover {
+    opacity: .5;
     /* IE 9 */
     -ms-transform: scale(1.05);
     /* Safari 3-8 */
     -webkit-transform: scale(1.05);
     transform: scale(1.05); }
+
+.text {
+  max-width: 840px;
+  width: 42vw;
+  display: block;
+  position: absolute;
+  background: transparent;
+  text-align: center;
+  justify-items: center;
+  margin-right: 500px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+  font: normal normal 500 25px Roboto;
+  letter-spacing: .3em;
+  top: 50%;
+  z-index: 1;
+  opacity: 1; }
+
+.wrap {
+  position: relative;
+  background: pink; }
+
+.overlay {
+  overflow: hidden;
+  position: relative;
+  /* background-color: #008CBA;  */ }
+  .overlay:hover .text {
+    opacity: 1; }
 
 /* PROJECTS */
 #lightbox {
@@ -445,11 +489,13 @@ nav {
 @media only screen and (max-width: 1000px) {
   .pinfo {
     height: auto;
-    margin: 30px auto;
+    margin: 100px auto;
     padding: 0;
     display: grid;
     grid-template-columns: 70% 30%;
     grid-template-rows: 0.5fr 2fr 0.5fr; }
+    .pinfo img {
+      display: none; }
   .ptitle {
     padding: 0;
     margin: 0;
@@ -472,7 +518,7 @@ nav {
     align-self: center;
     justify-self: left; }
   .carousel {
-    max-height: 40vh; } }
+    max-height: 20vh; } }
 
 @media only screen and (max-width: 1150px) {
   #page {
@@ -509,6 +555,18 @@ nav {
     font: normal normal 300 31.5px Roboto;
     letter-spacing: 0.2em; } }
 
+/* @media only screen and (min-width:1150px){
+    .pinfo{
+        grid-template-columns: .5fr 1fr 3fr 1fr .5fr;
+        grid-auto-rows: minmax(auto, 350px);
+    }
+}
+@media only screen and (max-width:1150px){
+    .pinfo{
+        grid-template-columns: .5fr 1fr 3fr 1fr .5fr;
+        grid-auto-rows: minmax(auto, 350px);
+    }
+} */
 * {
   background-color: #080808;
   margin: 0;

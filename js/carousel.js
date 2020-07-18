@@ -35,7 +35,7 @@ const updateDots = (currentDot, targetDot) => {
 const updateDesc = (currentDesc, targetDesc,) => {
     if (currentDesc.length > 1) {
         currentDesc.classList.remove('current-slide');
-        currentDesc.classList.add('hideDesc-text')
+        currentDesc.classList.add('hideDesc-text');
         targetDesc.classList.add('current-slide');
         targetDesc.classList.remove('hideDesc-text');
     } else {
