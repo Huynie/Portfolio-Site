@@ -1,100 +1,339 @@
 // MOBILE
-@media only screen and (max-width:600px){
-    .carousel{
-        height: 10vh;
-    }
-    .slash img{
-        /* height: 10%; */
-        width: 10%;
-    }
-}
-@media only screen and (max-width:1000px){
-    .pinfo{
-        height: auto;
-        margin: 100px auto;
-        padding: 0;
-    
-        display: grid;
-        grid-template-columns: 70% 30%;
-        grid-template-rows: 0.5fr 2fr 0.5fr;
 
-        & img{
-            display: none;
-        }
+@media only screen and (max-width: 1000px) {
+  .pinfo {
+    height: auto;
+    margin: 100px auto;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+
+    & img {
+      display: none;
     }
-    .ptitle{
-        padding: 0;
-        margin: 0;
-        align-self: end;
-    }
-    .desc{
-        max-width: 1000ch;
-        font: normal normal 300 11px Roboto;
-        margin-left: 30px;
-        margin-top: 8px;
-        grid-column: 1/3;
-    }
-    .pdate{
-        font: normal normal 200 30px Roboto;
-        max-width: 50px;
-        margin: 0;
-        justify-self: end;
-        align-self: flex-start;
-        grid-column: 2/3;
-    }
-    .slash img{
-        width: 50%;
-        align-self: center;
-        justify-self: left;
-    }
-    .carousel{
-        max-height: 20vh;
-    }
+  }
+  .ptitle {
+    padding: 0;
+    margin: 0;
+    align-self: end;
+  }
+  .desc {
+    max-width: 1000ch;
+    font: normal normal 300 11px Roboto;
+    margin-left: 30px;
+    margin-top: 8px;
+    grid-column: 1/3;
+  }
+  .pdate {
+    font: normal normal 200 30px Roboto;
+    max-width: 50px;
+    margin: 0;
+    justify-self: end;
+    align-self: flex-start;
+    grid-column: 2/3;
+  }
+  .slash img {
+    width: 50%;
+    align-self: center;
+    justify-self: left;
+  }
+  .carousel {
+    max-height: 20vh;
+  }
 }
-@media only screen and (max-width:1150px){
-    #page{
-        display: initial;
+@media only screen and (max-width: 1150px) {
+  #page {
+    display: initial;
+  }
+  #profile {
+    margin: auto;
+    padding: 0 0 0 30px;
+    justify-self: center;
+  }
+  #about {
+    margin-top: 100px;
+    margin-right: 80px;
+  }
+  #experience {
+    width: auto;
+    max-width: 580px;
+    padding: 0;
+    margin: auto;
+    float: left;
+    float: right;
+  }
+  #date {
+    margin-left: 50px;
+  }
+  #academics {
+    width: 700px;
+    float: left;
+    margin: auto;
+    grid-template-columns: 22% 78%;
+    grid-auto-rows: minmax(50px, auto);
+  }
+  #school {
+    margin-top: 5px;
+  }
+  #date2 {
+    margin-left: 50px;
+    line-height: 10%;
+    letter-spacing: 0.2em;
+    width: 60px;
+    font: normal normal 300 31.5px Roboto;
+    letter-spacing: 0.2em;
+  }
+}
+@media only screen and (max-width: 700px) {
+  hr{
+    position: relative;
+    top: 10px;
+    max-width: 320px;
+  }
+  nav{
+    position: sticky;
+    grid-template-columns: .5% 1fr 1fr .5%;
+
+    .logo{
+      display: none;
     }
-    #profile{
-        margin: auto;
-        padding: 0 0 0 50px;
+    ul{
+      grid-column: 2/3;
+      justify-self: left;
+      font: normal normal 300 18px $font-stack;
+    }
+    a{
+      color: $hover-color;
+    }
+    .menu{
+      display: none;
+    }
+    li{
+      .pageTitle{
+        cursor: text;
+      }
+    }
+
+    button{
+      display: block;
+      height: 60px;
+      width: 15px;
+      grid-column: 3/4;
+      justify-self: right;
+      background: url(../Assets/hamburger-icon.png) no-repeat right bottom;
+      background-size: 100% 80%;
+      border: none;
+      cursor: pointer;
+    }
+    .slash{
+      opacity: 1;
+      display: initial;
+      height: 18px;
+    }
+    &.home{
+      grid-template-columns: 1fr 1fr;
+      height: 150px;
+      z-index: 1;
+      position: absolute;
+      bottom: 0px;
+
+      h1{
+          color: $hover-color;
+          width: 85px;
+          height: 55px;
+          font: normal normal 500 25px $font-stack;
+          letter-spacing: 0.4em;
+          line-height: 100%;
+          /* word-wrap: break-word; */
+          justify-self: start;
+          align-self: center;
+        }
+        p{
+          width: 150px;
+          font: normal normal 100 10px $font-stack;
+          padding-left: 25px;
+          letter-spacing: .05em;
+        }
+      ul{
+        padding-left: 50px;
+        display: grid;
+        justify-items: end;
+        font: normal normal 300 12px $font-stack;
+        letter-spacing: 0.34em;
+        grid-template-columns: 2fr 1fr;
+        img{
+          opacity: .6;
+          align-self: center;
+          justify-self: end;
+          grid-column: 1/2;
+          grid-row: 1/3;
+          height: 60px;
+        }
+      }
+      li{
         justify-self: center;
+        align-self: center;
+        grid-column: 2/3;
+        display: initial;
+        padding-right: 2.5rem;
+      }
+    }
+  }
+  .hamburger{
+    &__popup{
+      display: none;
+      z-index: 999;
+      width: 180px;
+      height: 300px;
+      position: fixed;
+      right: 0;
+      top: 0;
+      background-color: rgba(24, 24, 24, 0.9);
+      /* justify-content: center;
+      align-items: center; */
+
+      .pageTitle{
+        font: normal normal 300 20px $font-stack;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        color: $hover-color;
+        background: transparent;
+        position: relative;
+        padding: 20px 0;
+      }
+
+      .menu{
+        color: $font-color;
+        font: normal normal 300 20px $font-stack;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        background: transparent;
+        position: relative;
+        padding: 20px 0;
+      }
+
+      &#active{
+        display: block;
+      }
+      &--items{
+        top: 50px;
+        position: relative;
+        display: block;
+        color: $hover-color;
+        text-decoration: none;
+        font: normal normal 300 20px $font-stack;
+        letter-spacing: .3em;
+        justify-items: end;
+
+      }
+    }
+  }
+  .autoSlides{
+    width: 92vw;
+  }
+  //ABOUT
+  #page{
+    display: block;
+    position: static;
+    overflow: hidden;
+    height: 100%;
+  }
+  #profile{
+    position: relative;
+    height: 220px;
+    /* width: 400px; */
+
+    #Avatar{
+      padding: 20px 0 5px 0;
+      height: 100px;
+      width: 100px;
     }
     #about{
-        margin-top: 100px;
-        margin-right: 80px;
+      display: flex;
+      float: left;
+      width: 28%;
+      height: 30%;
+      padding: 0;
+      margin: 70px 30px auto 50px;
+      font: normal normal 300 9px Roboto;
+      line-height: 150%;
+
+      img{
+        height: 65px;
+        padding:0 20px 0px 0px;
+      }
+      text{
+        top: 50px;
+      }
     }
-    #experience{
-        width: auto;
-        max-width: 580px;
-        padding: 0;
-        margin: auto;
-        float: left;
-        float: right;
+    #name{
+      font-size: 45px;
+      height: auto;
+      width: 50%;
+      padding: 8px 0px;
+      color: $hover-color;
     }
+    #social{
+      width: 100%;
+      a{
+        opacity: 1;
+      }
+    }
+  }
+  #experience{
+    position: relative;
+    height: 100%;
+    margin: 100px auto 10px auto;
+    padding-right: 8px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    grid-auto-rows: minmax(auto, auto);
+    color: $hover-color;
+
     #date{
-        margin-left: 50px;
+      font: normal normal 400 25px $font-stack;
+      letter-spacing: 0.3em;
     }
-    #academics{
-        width: 700px;
-        float: left;
-        margin: auto;
-        grid-template-columns: 22% 78%;
-        grid-auto-rows: minmax(50px, auto);
+  }
+  .achievements{
+    position: relative;
+    margin: 100px auto 500px auto;
+    padding-right: 8px;
+    height: 100%;
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    grid-auto-rows: minmax(auto, auto);
+    color: $hover-color;
+
+    #date2{
+      font: normal normal 400 25px Roboto;
+      padding-bottom: 20px;
+    }
+    p{
+      color: $font-color;
+      font: normal normal 300 12px Roboto;
+      line-height: 160%;
+      letter-spacing: 0.2em;
     }
     #school{
-        margin-top: 5px;
-    }
-    #date2{
-        margin-left: 50px;
-        line-height: 10%;
+      font: normal normal 900 12px Roboto;
         letter-spacing: 0.2em;
-        width: 60px;
-        font: normal normal 300 31.5px Roboto;
-        letter-spacing: 0.2em;
+        padding: 0;
+        line-height: 100%;
     }
-
-    
+  }
+  .carousel {
+    height: 10vh;
+  }
+  .slash img {
+    /* height: 10%; */
+    width: 10%;
+  }
 }
 /* @media only screen and (min-width:1150px){
     .pinfo{

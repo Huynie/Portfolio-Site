@@ -10,7 +10,7 @@ images.forEach(image => {
         const img = document.createElement('img')
         img.src = image.src
         console.log(img.src)
-        while (lightbox.firstChild){   //removes prev image clicked on from lightbox
+        while (lightbox.firstChild) {   //removes prev image clicked on from lightbox
             lightbox.removeChild(lightbox.firstChild)
         }
         lightbox.appendChild(img)
@@ -18,6 +18,6 @@ images.forEach(image => {
 })
 
 lightbox.addEventListener('click', e => {
-    if (e.target !== e.currentTarget) return // clicking outside of image deactivate lightbox
+    if (e.target !== e.currentTarget) return// clicking outside of image deactivate lightbox
     lightbox.classList.remove('active')
 })
