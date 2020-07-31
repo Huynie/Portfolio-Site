@@ -1,45 +1,51 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Huy Chau</title>
-        <meta name="Description" content="Tree Warriors">
-        <meta name="keywords" content="Huy Chau">
-        <link rel="stylesheet" href="../css/style.css">
-        <script defer src="../js/carousel.js"></script>
-        <script defer src="../js/lightbox.js"></script>
-    </head>
-    <header>
-        <nav>
-            <a class="logo" href="./home.html">Huy Chau</a>
-            <ul>
-                <li><a href="./gallery.html"  style="color:white">Work</a></li>
-                <li><a href="./about.html">About</a></li>
-                <!-- <li><a href="#">Thoughts</a></li> -->
-            </ul>
-        </nav>
-        <hr>
-    </header>
+
+<head>
+    <title>Huy Chau</title>
+    <meta name="Description" content="Tree Warriors">
+    <meta name="keywords" content="Huy Chau">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/carousel.js"></script>
+    <script defer src="../js/lightbox.js"></script>
+</head>
+<header>
+    <nav>
+        <a class='logo' href="./home.html">Huy Chau</a>
+        <ul>
+            <li class="menu" id="isHidden"><a href="./home.html">Home</a></li>
+            <li class="pageTitle"><a href="./gallery.html">Work</a></li>
+            <li class="menu"><a href="./about.html">About</a></li>
+            <img class="slash" src="../Assets/images/Divider.svg"></img>
+        </ul>
+        <button type="menu" class="hamburger"></button>
+    </nav>
+    <hr>
+    <script src="../js/hamburger.js"></script>
+</header>
+<br>
+
+<body class="mobileContainer">
     <br>
-    <body>
-        <br>
-        <div class="carousel">
-                <div class="carousel__track-container">
-                    <ul class="carousel__track">
-                        <li class="carousel__slide current-slide">
-                            <img src="../Assets/images/Tree Warriors/Final.png" alt="">
-                        </li>
-                        <li class="carousel__slide current-slide">
-                            <img src="../Assets/images/Tree Warriors/Egypt Tree Warrior Final.png" alt="">
-                        </li>
-                        
-            </div>
-            <div class="carousel__nav">
-                <button class="carousel__nav__button carousel__nav__button--left is-hidden">
-                    <img src="../Assets/images/Arrow_L.png" alt=""></img>
-                </button>
-                <div class="carousel__indicContainer">
-                    <input type="button" class="carousel__indicator current-slide"></input>
-                    <input type="button" class="carousel__indicator"></input>
+    <div class="carousel">
+        <div class="carousel__track-container">
+            <ul class="carousel__track">
+                <li class="carousel__slide current-slide">
+                    <img src="../Assets/images/Tree Warriors/Final.png" alt="">
+                </li>
+                <li class="carousel__slide current-slide">
+                    <img src="../Assets/images/Tree Warriors/Egypt Tree Warrior Final.png" alt="">
+                </li>
+
+        </div>
+        <div class="carousel__nav">
+            <button class="carousel__nav__button carousel__nav__button--left is-hidden">
+                <img src="../Assets/images/Arrow_L.png" alt=""></img>
+            </button>
+            <div class="carousel__indicContainer">
+                <input type="button" class="carousel__indicator current-slide"></input>
+                <input type="button" class="carousel__indicator"></input>
                 <button class="carousel__nav__button carousel__nav__button--right">
                     <img src="../Assets/images/Arrow_R.png" alt=""></img>
                 </button>
@@ -59,6 +65,6 @@
             <img class="slash" src="../Assets/images/Divider_dbl.svg" alt="">
             <div class="pdate">2019</div>
         </div>
-    </body>
+</body>
 
 </html>

@@ -1,87 +1,97 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Huy Chau</title>
-        <meta name="Description" content="Resurrection">
-        <meta name="keywords" content="Huy Chau">
-        <link rel="stylesheet" href="../css/style.css">
-        <script defer src="../js/carousel.js"></script>
-        <script defer src="../js/lightbox.js"></script>
-    </head>
-    <header>
-        <nav>
-            <a class="logo" href="./home.html">Huy Chau</a>
-            <ul>
-                <li><a href="./gallery.html"  style="color:white">Work</a></li>
-                <li><a href="./about.html">About</a></li>
-                <!-- <li><a href="#">Thoughts</a></li> -->
-            </ul>
-        </nav>
-        <hr>
-    </header>
-    <br>
-    <body>
-        <br>
-        <div class="carousel">
-                <div class="carousel__track-container">
-                    <ul class="carousel__track">
-                        <li class="carousel__slide current-slide">
-                            <img src="../Assets/images/Resurrection/Cam-3-Final-Blue.png" alt="">
-                        </li>
-                        <li class="carousel__slide current-slide">
-                            <img src="../Assets/images/Resurrection/Rise.png" alt="">
-                        </li>
-                        <li class="carousel__slide current-slide">
-                            <img src="../Assets/images/Resurrection/Head.png" alt="">
-                        </li>
-                        <li class="carousel__slide current-slide">
-                            <img src="../Assets/images/Resurrection/Costume.png" alt="">
-                        </li>
-                        <li class="carousel__slide current-slide">
-                            <img src="../Assets/images/Resurrection/Pillars.png" alt="">
-                        </li>
-                        <li class="carousel__slide current-slide">
-                            <img src="../Assets/images/Resurrection/Center.png" alt="">
-                        </li>
-                        <li class="carousel__slide current-slide">
-                            <img src="../Assets/images/Resurrection/Reanimation-Process.png" alt="">
-                        </li>
-                        
-                    </ul>
-            </div>
-            <div class="carousel__nav">
-                <button class="carousel__nav__button carousel__nav__button--left is-hidden">
-                    <img src="../Assets/images/Arrow_L.png" alt=""></img>
-                </button>
-                <div class="carousel__indicContainer">
-                    <input type="button" class="carousel__indicator current-slide"></input>
-                    <input type="button" class="carousel__indicator"></input>
-                    <input type="button" class="carousel__indicator"></input>
-                    <input type="button" class="carousel__indicator"></input>
-                    <input type="button" class="carousel__indicator"></input>
-                    <input type="button" class="carousel__indicator"></input>
-                    <input type="button" class="carousel__indicator"></input>
-                </div>
-                <button class="carousel__nav__button carousel__nav__button--right">
-                    <img src="../Assets/images/Arrow_R.png" alt=""></img>
-                </button>
-            </div>
-        </div>
 
-        <div class="pinfo">
-            <div class="ptitle">Resurrection</div>
-            <img class="slash" src="../Assets/images/Divider.svg" alt="">
-            <div class="desc">
-                <div class="desc__track">
-                    <div class="desc__text current-slide">
-                        Saleginella was known as a key ingredient in the resurrection ritual performed by Taoist priests. It was known as the resurrection plant due to its unique property of curling and shriveling up into a bud-like shape when dried and uncurling, spreading healthy green leaves when accumulating enough moisture.
-                        So what if these plants can actually resurrect cadavers? What if they can take control of cadavers like a parasite taking control of its host? It would be a sight to see corpses being reanimated.
-                    </div>
+<head>
+    <title>Huy Chau</title>
+    <meta name="Description" content="Resurrection">
+    <meta name="keywords" content="Huy Chau">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/carousel.js"></script>
+    <script defer src="../js/lightbox.js"></script>
+</head>
+<header>
+    <nav>
+        <a class='logo' href="./home.html">Huy Chau</a>
+        <ul>
+            <li class="menu" id="isHidden"><a href="./home.html">Home</a></li>
+            <li class="pageTitle"><a href="./gallery.html">Work</a></li>
+            <li class="menu"><a href="./about.html">About</a></li>
+            <img class="slash" src="../Assets/images/Divider.svg"></img>
+        </ul>
+        <button type="menu" class="hamburger"></button>
+    </nav>
+    <hr>
+    <script src="../js/hamburger.js"></script>
+</header>
+<br>
+
+<body class="mobileContainer">
+    <br>
+    <div class="carousel">
+        <div class="carousel__track-container">
+            <ul class="carousel__track">
+                <li class="carousel__slide current-slide">
+                    <img src="../Assets/images/Resurrection/Cam-3-Final-Blue.png" alt="">
+                </li>
+                <li class="carousel__slide current-slide">
+                    <img src="../Assets/images/Resurrection/Rise.png" alt="">
+                </li>
+                <li class="carousel__slide current-slide">
+                    <img src="../Assets/images/Resurrection/Head.png" alt="">
+                </li>
+                <li class="carousel__slide current-slide">
+                    <img src="../Assets/images/Resurrection/Costume.png" alt="">
+                </li>
+                <li class="carousel__slide current-slide">
+                    <img src="../Assets/images/Resurrection/Pillars.png" alt="">
+                </li>
+                <li class="carousel__slide current-slide">
+                    <img src="../Assets/images/Resurrection/Center.png" alt="">
+                </li>
+                <li class="carousel__slide current-slide">
+                    <img src="../Assets/images/Resurrection/Reanimation-Process.png" alt="">
+                </li>
+
+            </ul>
+        </div>
+        <div class="carousel__nav">
+            <button class="carousel__nav__button carousel__nav__button--left is-hidden">
+                <img src="../Assets/images/Arrow_L.png" alt=""></img>
+            </button>
+            <div class="carousel__indicContainer">
+                <input type="button" class="carousel__indicator current-slide"></input>
+                <input type="button" class="carousel__indicator"></input>
+                <input type="button" class="carousel__indicator"></input>
+                <input type="button" class="carousel__indicator"></input>
+                <input type="button" class="carousel__indicator"></input>
+                <input type="button" class="carousel__indicator"></input>
+                <input type="button" class="carousel__indicator"></input>
+            </div>
+            <button class="carousel__nav__button carousel__nav__button--right">
+                <img src="../Assets/images/Arrow_R.png" alt=""></img>
+            </button>
+        </div>
+    </div>
+
+    <div class="pinfo">
+        <div class="ptitle">Resurrection</div>
+        <img class="slash" src="../Assets/images/Divider.svg" alt="">
+        <div class="desc">
+            <div class="desc__track">
+                <div class="desc__text current-slide">
+                    Saleginella was known as a key ingredient in the resurrection ritual performed by Taoist priests. It
+                    was known as the resurrection plant due to its unique property of curling and shriveling up into a
+                    bud-like shape when dried and uncurling, spreading healthy green leaves when accumulating enough
+                    moisture.
+                    So what if these plants can actually resurrect cadavers? What if they can take control of cadavers
+                    like a parasite taking control of its host? It would be a sight to see corpses being reanimated.
                 </div>
             </div>
-            <img class="slash" src="../Assets/images/Divider_dbl.svg" alt="">
-            <div class="pdate">2019</div>
         </div>
-    </body>
+        <img class="slash" src="../Assets/images/Divider_dbl.svg" alt="">
+        <div class="pdate">2019</div>
+    </div>
+</body>
 
 </html>
