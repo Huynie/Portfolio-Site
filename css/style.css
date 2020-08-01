@@ -103,6 +103,13 @@ nav {
       letter-spacing: 0.34em; }
     nav.home li {
       padding-right: 2.5rem; }
+    nav.home p {
+      display: block;
+      float: left;
+      grid-column: 2/3;
+      font: normal normal 100 15px "Roboto";
+      padding-left: 3.2em;
+      letter-spacing: .05em; }
   nav #isHidden {
     display: none; }
 
@@ -591,6 +598,8 @@ nav {
       z-index: 1;
       position: absolute;
       bottom: 0px; }
+      nav.home div {
+        width: 100px; }
       nav.home h1 {
         color: #ffffff;
         width: 85px;
@@ -602,10 +611,13 @@ nav {
         justify-self: start;
         align-self: center; }
       nav.home p {
+        float: left;
         width: 150px;
         font: normal normal 100 10px "Roboto";
         padding-left: 25px;
-        letter-spacing: .05em; }
+        letter-spacing: .05em;
+        align-content: left;
+        justify-items: left; }
       nav.home ul {
         padding-left: 50px;
         display: grid;

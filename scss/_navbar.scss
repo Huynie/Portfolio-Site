@@ -115,6 +115,14 @@ nav{
         li{
             padding-right: 2.5rem;
         }
+        p{
+            display: block;
+            float: left;
+            grid-column: 2/3;
+            font: normal normal 100 15px $font-stack;
+            padding-left: 3.2em;
+            letter-spacing: .05em;
+        }
     }
     #isHidden{
         display: none;

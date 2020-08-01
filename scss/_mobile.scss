@@ -129,7 +129,6 @@
         cursor: text;
       }
     }
-
     button{
       display: block;
       height: 60px;
@@ -152,7 +151,9 @@
       z-index: 1;
       position: absolute;
       bottom: 0px;
-
+      div{
+        width: 100px;
+      }
       h1{
           color: $hover-color;
           width: 85px;
@@ -165,10 +166,13 @@
           align-self: center;
         }
         p{
+          float: left;
           width: 150px;
           font: normal normal 100 10px $font-stack;
           padding-left: 25px;
           letter-spacing: .05em;
+          align-content: left;
+          justify-items: left;
         }
       ul{
         padding-left: 50px;
