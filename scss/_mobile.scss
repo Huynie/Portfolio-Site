@@ -87,49 +87,50 @@
   }
 }
 @media only screen and (max-width: 700px) {
-  ::-webkit-scrollbar{
+  ::-webkit-scrollbar {
     display: none;
   }
-  .mobileContainer{
+  .mobileContainer {
     display: block;
     position: absolute;
     max-width: 100vw;
     max-height: 100vh;
-    height: 80vh;
+    height: 100vh;
     scrollbar-width: none;
-    &::-webkit-scrollbar{
+    overflow: hidden;
+    &::-webkit-scrollbar {
       display: none;
     }
   }
-  hr{
+  hr {
     position: relative;
     top: 10px;
     max-width: 320px;
   }
-  nav{
+  nav {
     position: sticky;
-    grid-template-columns: .5% 1fr 1fr .5%;
+    grid-template-columns: 0.5% 1fr 1fr 0.5%;
 
-    .logo{
+    .logo {
       display: none;
     }
-    ul{
+    ul {
       grid-column: 2/3;
       justify-self: left;
       font: normal normal 300 18px $font-stack;
     }
-    a{
+    a {
       color: $hover-color;
     }
-    .menu{
+    .menu {
       display: none;
     }
-    li{
-      .pageTitle{
+    li {
+      .pageTitle {
         cursor: text;
       }
     }
-    button{
+    button {
       display: block;
       height: 60px;
       width: 15px;
@@ -140,67 +141,75 @@
       border: none;
       cursor: pointer;
     }
-    .slash{
+    .slash {
       opacity: 1;
       display: initial;
       height: 18px;
     }
-    &.home{
-      grid-template-columns: 1fr 1fr;
+    &.home {
+      display: flex;
+      /* grid-template-columns: 1fr 1fr; */
       height: 150px;
+      width: 100%;
       z-index: 1;
       position: absolute;
       bottom: 0px;
-      div{
-        width: 100px;
-      }
-      h1{
+      left: 0;
+      div {
+        flex: 1;
+        margin: auto;
+        padding: 0 0 0 10px;
+
+        h1 {
           color: $hover-color;
           width: 85px;
           height: 55px;
           font: normal normal 500 25px $font-stack;
           letter-spacing: 0.4em;
           line-height: 100%;
-          /* word-wrap: break-word; */
           justify-self: start;
           align-self: center;
         }
-        p{
+        p {
           float: left;
           width: 150px;
           font: normal normal 100 10px $font-stack;
           padding-left: 25px;
-          letter-spacing: .05em;
+          letter-spacing: 0.05em;
           align-content: left;
           justify-items: left;
         }
-      ul{
-        padding-left: 50px;
+      }
+
+      ul {
+        flex: 2;
+        margin: auto;
+        /* padding-left: 20px; */
         display: grid;
-        justify-items: end;
+        justify-content: end;
         font: normal normal 300 12px $font-stack;
         letter-spacing: 0.34em;
         grid-template-columns: 2fr 1fr;
-        img{
-          opacity: .6;
+        img {
+          opacity: 0.6;
           align-self: center;
           justify-self: end;
           grid-column: 1/2;
           grid-row: 1/3;
           height: 60px;
         }
-      }
-      li{
-        justify-self: center;
-        align-self: center;
-        grid-column: 2/3;
-        display: initial;
-        padding-right: 2.5rem;
+        li {
+          justify-self: end;
+          align-self: center;
+          grid-column: 2/3;
+          padding-right: 2.5rem;
+          text-justify: right;
+        }
       }
     }
   }
-  .hamburger{
-    &__popup{
+  .hamburger {
+    &__popup {
       display: none;
       z-index: 999;
       width: 180px;
@@ -212,7 +221,7 @@
       /* justify-content: center;
       align-items: center; */
 
-      .pageTitle{
+      .pageTitle {
         font: normal normal 300 20px $font-stack;
         display: block;
         text-decoration: none;
@@ -223,7 +232,7 @@
         padding: 20px 0;
       }
 
-      .menu{
+      .menu {
         color: $font-color;
         font: normal normal 300 20px $font-stack;
         display: block;
@@ -234,44 +243,43 @@
         padding: 20px 0;
       }
 
-      &#active{
+      &#active {
         display: block;
       }
-      &--items{
+      &--items {
         top: 50px;
         position: relative;
         display: block;
         color: $hover-color;
         text-decoration: none;
         font: normal normal 300 20px $font-stack;
-        letter-spacing: .3em;
+        letter-spacing: 0.3em;
         justify-items: end;
-
       }
     }
   }
-  .autoSlides{
+  .autoSlides {
     width: 92vw;
   }
   //ABOUT
-  #page{
+  #page {
     display: block;
     position: static;
     overflow: hidden;
     height: 100%;
     max-height: 1050px;
   }
-  #profile{
+  #profile {
     position: relative;
     height: 220px;
     /* width: 400px; */
 
-    #Avatar{
+    #Avatar {
       padding: 20px 0 5px 0;
       height: 100px;
       width: 100px;
     }
-    #about{
+    #about {
       display: flex;
       float: left;
       width: 28%;
@@ -281,29 +289,29 @@
       font: normal normal 300 9px Roboto;
       line-height: 150%;
 
-      img{
+      img {
         height: 65px;
-        padding:0 20px 0px 0px;
+        padding: 0 20px 0px 0px;
       }
-      text{
+      text {
         top: 50px;
       }
     }
-    #name{
+    #name {
       font-size: 45px;
       height: auto;
       width: 50%;
       padding: 8px 0px;
       color: $hover-color;
     }
-    #social{
+    #social {
       width: 100%;
-      a{
+      a {
         opacity: 1;
       }
     }
   }
-  #experience{
+  #experience {
     position: relative;
     height: 100%;
     margin: 100px auto 10px auto;
@@ -313,12 +321,12 @@
     grid-auto-rows: minmax(auto, auto);
     color: $hover-color;
 
-    #date{
+    #date {
       font: normal normal 400 25px $font-stack;
       letter-spacing: 0.3em;
     }
   }
-  .achievements{
+  .achievements {
     position: relative;
     margin: 100px auto 500px auto;
     padding-right: 8px;
@@ -329,43 +337,43 @@
     grid-auto-rows: minmax(auto, auto);
     color: $hover-color;
 
-    #date2{
+    #date2 {
       font: normal normal 400 25px Roboto;
       padding-bottom: 20px;
     }
-    p{
+    p {
       color: $font-color;
       font: normal normal 300 12px Roboto;
       line-height: 160%;
       letter-spacing: 0.2em;
     }
-    #school{
+    #school {
       font: normal normal 900 12px Roboto;
-        letter-spacing: 0.2em;
-        padding: 0;
-        line-height: 100%;
+      letter-spacing: 0.2em;
+      padding: 0;
+      line-height: 100%;
     }
   }
   //GALLERY
-   .gallery{
-     margin-top: 20px;
-     display: block;
-   }
-   .text{
-     left: 20px;
-     bottom: 40px;
-     background: rgba(0, 0, 0, 0);
-     opacity: 1;
-     text-align: left;
-     text-justify: center;
-     word-wrap: normal;
-     font: normal normal 400 15px Roboto;
-     letter-spacing: .3em;
-     width: 80%;
-     background-size: auto;
-     text-overflow: clip;
-     word-break: normal;
-   }
+  .gallery {
+    margin-top: 20px;
+    display: block;
+  }
+  .text {
+    left: 20px;
+    bottom: 40px;
+    background: rgba(0, 0, 0, 0);
+    opacity: 1;
+    text-align: left;
+    text-justify: center;
+    word-wrap: normal;
+    font: normal normal 400 15px Roboto;
+    letter-spacing: 0.3em;
+    width: 80%;
+    background-size: auto;
+    text-overflow: clip;
+    word-break: normal;
+  }
 
   //PROJECTS
   .carousel {
@@ -375,25 +383,25 @@
     margin: auto;
     position: relative;
 
-    &__nav{
+    &__nav {
       width: 100vw;
       max-width: 100vw;
       margin: 15px auto;
       position: relative;
       display: flex;
 
-      &__button{
+      &__button {
         margin: auto 15px;
-        img{
+        img {
           align-self: center;
         }
       }
     }
-    &__indicContainer{
+    &__indicContainer {
       width: 100vw;
       max-width: 100vw;
     }
-    &__indicator{
+    &__indicator {
       background-position-y: center;
       margin: 0 5px;
       width: 10%;
@@ -403,32 +411,31 @@
     /* height: 10%; */
     width: 10%;
   }
-  .pinfo{
+  .pinfo {
     margin: 80px auto;
     grid-row: auto;
     max-height: 40vh;
   }
-  .ptitle{
+  .ptitle {
     font: normal normal 600 21px Roboto;
     letter-spacing: 0.3em;
     line-height: 1em;
   }
-  .desc{
+  .desc {
     padding: 0;
     margin-top: 20px;
     margin-bottom: 20px;
-    &__text{
-        font: normal normal 300 12px Roboto;
-        letter-spacing: 0.3em;
+    &__text {
+      font: normal normal 300 12px Roboto;
+      letter-spacing: 0.3em;
     }
   }
-  .pdate{
+  .pdate {
     font: normal normal 200 28px Roboto;
     line-height: 100%;
-    letter-spacing: .2em;
+    letter-spacing: 0.2em;
     text-align: right;
     background: transparent;
-
   }
 }
 /* @media only screen and (min-width:1150px){
