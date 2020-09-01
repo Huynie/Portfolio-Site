@@ -248,7 +248,6 @@
       }
 
       &#active {
-        animation: $hamburger;
         display: block;
       }
       &--items {
@@ -447,7 +446,7 @@
     padding: 0;
     width: 90%;
     margin: 20px auto 20px auto;
-    text-align: left;
+    text-align: center;
     text-justify: inter-character;
     &__text {
       font: normal normal 300 10px Roboto;
@@ -456,7 +455,7 @@
   }
   .pdate {
     font: normal normal 200 18px Roboto;
-    width: 5vw;
+    width: 28px;
     line-height: 100%;
     letter-spacing: 0.2em;
     text-align: center;
