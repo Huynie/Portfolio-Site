@@ -18,6 +18,7 @@
 }
 
 .overlay {
+  animation: $loadIn;
   overflow: hidden;
   position: relative;
   display: flex;

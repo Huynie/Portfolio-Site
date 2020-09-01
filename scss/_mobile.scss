@@ -248,6 +248,7 @@
       }
 
       &#active {
+        animation: $hamburger;
         display: block;
       }
       &--items {

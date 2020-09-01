@@ -1,4 +1,20 @@
 @import url("../css/style.css");
+@keyframes loadIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes hamburger {
+  from {
+    opacity: 0;
+    transform: translateX(180px); }
+  to {
+    opacity: 1;
+    transform: translateX(0); } }
+
 ::-webkit-scrollbar {
   width: 10px; }
   ::-webkit-scrollbar-track {
@@ -114,6 +130,7 @@ nav {
     display: none; }
 
 .hamburger__popup {
+  animation: hamburger 0.4s;
   display: none; }
 
 /* HOME */
@@ -295,6 +312,7 @@ nav {
         } */ }
 
 .overlay {
+  animation: loadIn 0.8s;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -734,6 +752,7 @@ nav {
       position: relative;
       padding: 20px 0; }
     .hamburger__popup#active {
+      animation: hamburger 0.4s;
       display: block; }
     .hamburger__popup--items {
       top: 50px;
