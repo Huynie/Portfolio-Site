@@ -31,19 +31,26 @@
     <div class="carousel">
         <div class="carousel__track-container">
             <ul class="carousel__track">
-                <li class="carousel__slide current-slide">
-                    <img src="../Assets/images/Pronged アヒル/Ship 1.jpg" alt="">
-                </li>
-                <li class="carousel__slide current-slide">
-                    <img src="../Assets/images/Pronged アヒル/Ship 2.jpg" alt="">
-                </li>
-                <li class="carousel__slide current-slide">
-                    <img src="../Assets/images/Pronged アヒル/Ship 3.jpg" alt="">
-                </li>
-                <li class="carousel__slide current-slide">
-                    <img src="../Assets/images/Pronged アヒル/Thumbnails.jpg" alt="">
-                </li>
-
+                <picture class="carousel__slide current-slide">
+                    <source media="(max-width: 600px)"
+                            srcset="../Assets/images/Pronged_アヒル/Ship1_h.jpg">
+                    <img src="../Assets/images/Pronged_アヒル/Ship 1.jpg" alt="">
+                </picture>
+                <picture class="carousel__slide current-slide">
+                    <source media="(max-width: 600px)"
+                            srcset="../Assets/images/Pronged_アヒル/Ship2_h.jpg">
+                    <img src="../Assets/images/Pronged_アヒル/Ship 2.jpg" alt="">
+                </picture>
+                <picture class="carousel__slide current-slide">
+                    <source media="(max-width: 600px)"
+                            srcset="../Assets/images/Pronged_アヒル/Ship3_h.jpg">
+                    <img src="../Assets/images/Pronged_アヒル/Ship 3.jpg" alt="">
+                </picture>
+                <picture class="carousel__slide current-slide">
+                    <source media="(max-width: 600px)"
+                            srcset="../Assets/images/Pronged_アヒル/Thumbnails_h.jpg">
+                    <img src="../Assets/images/Pronged_アヒル/Thumbnails.jpg" alt="">
+                </picture>
             </ul>
         </div>
         <div class="carousel__nav">

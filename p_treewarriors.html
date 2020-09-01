@@ -31,12 +31,16 @@
     <div class="carousel">
         <div class="carousel__track-container">
             <ul class="carousel__track">
-                <li class="carousel__slide current-slide">
-                    <img src="../Assets/images/Tree Warriors/Final.jpg" alt="">
-                </li>
-                <li class="carousel__slide current-slide">
-                    <img src="../Assets/images/Tree Warriors/Egypt Tree Warrior Final.jpg" alt="">
-                </li>
+                <picture class="carousel__slide current-slide">
+                    <source media="(max-width: 600px)"
+                            srcset="../Assets/images/Tree_Warriors/Edo_Final_h.jpg">
+                    <img src="../Assets/images/Tree_Warriors/Edo_Final.jpg" alt="">
+                </picture>
+                <picture class="carousel__slide current-slide">
+                    <source media="(max-width: 600px)"
+                            srcset="../Assets/images/Tree_Warriors/EgyptTreeWarriorFinal_h.jpg">
+                    <img src="../Assets/images/Tree_Warriors/Egypt Tree Warrior Final.jpg" alt="">
+                </picture>
             </ul>
         </div>
         <div class="carousel__nav">
