@@ -412,6 +412,7 @@ nav {
       display: none; }
   .carousel__slide,
   .carousel li {
+    animation: loadIn 0.8s;
     margin: 0;
     display: inline-block;
     background: transparent;
@@ -493,7 +494,8 @@ nav {
   padding: 80px 0;
   display: grid;
   grid-template-columns: 1fr 2fr 3fr 2fr 1fr;
-  align-items: flex-end; }
+  align-items: flex-end;
+  animation: loadIn 0.8s; }
 
 .ptitle {
   font: normal normal 900 25px Roboto;

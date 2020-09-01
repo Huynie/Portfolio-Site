@@ -75,6 +75,7 @@
   }
   &__slide,
   li {
+    animation: $loadIn;
     margin: 0;
     display: inline-block;
     background: transparent;
@@ -174,6 +175,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr 3fr 2fr 1fr;
   align-items: flex-end;
+  animation: $loadIn;
 }
 .ptitle {
   font: normal normal 900 25px Roboto;
