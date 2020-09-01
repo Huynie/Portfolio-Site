@@ -247,7 +247,7 @@ nav {
     font: normal normal 300 32px Roboto;
     letter-spacing: 0.2em;
     line-height: 120%;
-    width: 60px;
+    width: 53px;
     justify-self: end;
     grid-column: 1/2;
     word-wrap: break-word; }
@@ -815,7 +815,8 @@ nav {
     color: #ffffff; }
     #experience #date {
       font: normal normal 400 25px "Roboto";
-      letter-spacing: 0.3em; }
+      letter-spacing: 0.3em;
+      width: 45px; }
   .achievements {
     position: relative;
     margin: 100px auto 500px auto;
