@@ -1,4 +1,20 @@
 @import url("../css/style.css");
+@keyframes loadIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes hamburger {
+  from {
+    opacity: 0;
+    transform: translateX(180px); }
+  to {
+    opacity: 1;
+    transform: translateX(0); } }
+
 ::-webkit-scrollbar {
   width: 10px; }
   ::-webkit-scrollbar-track {
@@ -103,10 +119,18 @@ nav {
       letter-spacing: 0.34em; }
     nav.home li {
       padding-right: 2.5rem; }
+    nav.home p {
+      display: block;
+      float: left;
+      grid-column: 2/3;
+      font: normal normal 100 15px "Roboto";
+      padding-left: 3.2em;
+      letter-spacing: 0.05em; }
   nav #isHidden {
     display: none; }
 
 .hamburger__popup {
+  animation: hamburger 0.4s;
   display: none; }
 
 /* HOME */
@@ -223,7 +247,7 @@ nav {
     font: normal normal 300 32px Roboto;
     letter-spacing: 0.2em;
     line-height: 120%;
-    width: 60px;
+    width: 53px;
     justify-self: end;
     grid-column: 1/2;
     word-wrap: break-word; }
@@ -288,6 +312,7 @@ nav {
         } */ }
 
 .overlay {
+  animation: loadIn 0.8s;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -297,7 +322,7 @@ nav {
     opacity: 1;
     z-index: 1; }
   .overlay:hover .zoom {
-    opacity: .5;
+    opacity: 0.5;
     z-index: 0;
     /* IE 9 */
     -ms-transform: scale(1.05);
@@ -311,11 +336,11 @@ nav {
   text-align: center;
   color: #ffffff;
   font: normal normal 400 20px Roboto;
-  letter-spacing: .5em;
+  letter-spacing: 0.5em;
   opacity: 0; }
 
 .zoom {
-  transition: transform .2s;
+  transition: transform 0.2s;
   width: 100%;
   height: 250px;
   min-width: 250px;
@@ -346,11 +371,21 @@ nav {
   min-height: 200px;
   max-width: 1680px;
   width: 100%;
-  margin: 10px auto; }
-  .carousel img {
-    width: 100%;
+  margin: 50px auto;
+  /*  &__track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
     height: 100%;
-    object-fit: contain; }
+    transition: transform 250ms ease-in;
+  }
+  &__slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  } */ }
   .carousel video {
     height: calc(2px + 100.962%);
     width: calc(100% + 2px);
@@ -358,26 +393,43 @@ nav {
   .carousel__track-container {
     /* background: lightgreen; */
     /* padding: 10px; */
+    width: 100%;
     height: 100%;
-    position: relative;
-    overflow: hidden; }
+    position: relative; }
   .carousel__track {
-    padding: 0;
-    margin: 0;
     list-style: none;
-    position: relative;
+    /* background: green; */
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    object-fit: contain;
+    min-width: 100%;
     height: 100%;
-    transition: transform 250ms ease-in; }
-  .carousel__slide {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%; }
+    /* width: 100%; */
+    -webkit-overflow-scrolling: touch; }
+    .carousel__track::-webkit-scrollbar {
+      display: none; }
+  .carousel__slide,
+  .carousel li {
+    animation: loadIn 0.8s;
+    margin: 0;
+    display: inline-block;
+    background: transparent;
+    scroll-snap-align: start;
+    min-width: 100%;
+    object-fit: contain; }
+    .carousel__slide img,
+    .carousel li img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      background: transparent; }
   .carousel__nav {
     /* background: green; */
-    max-width: 1000px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 90vw;
+    display: flex;
+    /* grid-template-columns: 1fr 1fr 1fr; */
     justify-content: center;
     margin: 30px auto; }
     .carousel__nav__button {
@@ -385,46 +437,65 @@ nav {
       border: 0;
       cursor: pointer; }
       .carousel__nav__button img {
-        width: 25px;
-        height: 25px;
-        opacity: .4; }
+        width: 50px;
+        height: 30px;
+        opacity: 0.4; }
+      .carousel__nav__button--left {
+        margin-right: 50px; }
+      .carousel__nav__button--right {
+        margin-left: 50px; }
       .carousel__nav__button:hover img {
         opacity: 1; }
   .carousel__indicContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: static; }
+    position: static;
+    overflow-x: scroll;
+    /* width: 70vw; */
+    /* height: 100%; */
+    /* max-width: 80%; */ }
+    .carousel__indicContainer::-webkit-scrollbar {
+      display: none; }
   .carousel__indicator {
+    /* padding-top: 56.25%; */
     background: url(../Assets/images/slash.svg);
+    background-size: cover, contain;
+    background-position: center;
     background-repeat: no-repeat;
-    opacity: .4;
+    opacity: 0.3;
     border: 0;
-    width: 25px;
-    height: 25px;
+    max-width: 120px;
+    max-height: 60px;
+    width: 120px;
+    height: 60px;
     /* background: transparent; */
-    margin: 0 10px;
+    /* margin: 0 10px; */
     cursor: pointer;
     outline: none;
+    object-fit: contain;
     /* img{
             width: 20px;
             height: 20px;
             object-fit: cover;
         } */ }
   .carousel__indicator.current-slide {
-    background: url(../Assets/images/slash.svg);
+    /* background: url(../Assets/images/slash.svg); */
     background-repeat: no-repeat;
-    opacity: 1; }
+    opacity: 1;
+    border: 0.01rem solid rgba(255, 255, 255, 0.507); }
 
 .pinfo {
   /*     background-color: teal; */
   max-width: 1680px;
+  max-height: 15vh;
   height: auto;
   margin: auto;
   padding: 80px 0;
   display: grid;
   grid-template-columns: 1fr 2fr 3fr 2fr 1fr;
-  align-items: flex-end; }
+  align-items: flex-end;
+  animation: loadIn 0.8s; }
 
 .ptitle {
   font: normal normal 900 25px Roboto;
@@ -441,7 +512,10 @@ nav {
   align-self: start;
   max-width: 600px;
   padding-top: 15px; }
+  .desc__track {
+    width: 100%; }
   .desc__text {
+    display: none;
     color: #cccccc;
     font: normal normal 300 12px Roboto;
     letter-spacing: 0.4em;
@@ -462,48 +536,58 @@ nav {
   /* background: url(../Assets/images/Divider.png); */
   justify-self: center;
   align-self: center;
-  opacity: .5; }
+  opacity: 0.5; }
 
 .is-hidden {
   opacity: 0;
   cursor: default; }
 
-.hideDesc-text {
-  display: none; }
+.desc-show {
+  display: block; }
 
 @media only screen and (max-width: 1000px) {
-  .pinfo {
-    height: auto;
-    margin: 100px auto;
-    padding: 0;
-    display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 0.5fr 2fr 0.5fr; }
-    .pinfo img {
-      display: none; }
-  .ptitle {
-    padding: 0;
-    margin: 0;
-    align-self: end; }
-  .desc {
-    max-width: 1000ch;
-    font: normal normal 300 11px Roboto;
-    margin-left: 30px;
-    margin-top: 8px;
-    grid-column: 1/3; }
-  .pdate {
-    font: normal normal 200 30px Roboto;
-    max-width: 50px;
-    margin: 0;
-    justify-self: end;
-    align-self: flex-start;
-    grid-column: 2/3; }
-  .slash img {
-    width: 50%;
-    align-self: center;
-    justify-self: left; }
-  .carousel {
-    max-height: 20vh; } }
+  /* .carousel {
+    max-height: 40vh;
+
+    .pinfo {
+      height: auto;
+      margin: 100px auto;
+      padding: 0;
+
+      display: grid;
+      grid-template-columns: 70% 30%;
+      grid-template-rows: 0.5fr 2fr 0.5fr;
+
+      & img {
+        display: none;
+      }
+    }
+    .ptitle {
+      padding: 0;
+      margin: 0;
+      align-self: end;
+    }
+    .desc {
+      max-width: 1000ch;
+      font: normal normal 300 11px Roboto;
+      margin-left: 30px;
+      margin-top: 8px;
+      grid-column: 1/3;
+    }
+    .pdate {
+      font: normal normal 200 30px Roboto;
+      max-width: 50px;
+      margin: 0;
+      justify-self: end;
+      align-self: flex-start;
+      grid-column: 2/3;
+    }
+    .slash img {
+      width: 50%;
+      align-self: center;
+      justify-self: left;
+    }
+  } */ }
 
 @media only screen and (max-width: 1150px) {
   #page {
@@ -538,9 +622,11 @@ nav {
     letter-spacing: 0.2em;
     width: 60px;
     font: normal normal 300 31.5px Roboto;
-    letter-spacing: 0.2em; } }
+    letter-spacing: 0.2em; }
+  .carousel {
+    max-height: 55vh; } }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
   ::-webkit-scrollbar {
     display: none; }
   .mobileContainer {
@@ -548,8 +634,9 @@ nav {
     position: absolute;
     max-width: 100vw;
     max-height: 100vh;
-    height: 80vh;
-    scrollbar-width: none; }
+    height: 100vh;
+    scrollbar-width: none;
+    overflow: hidden; }
     .mobileContainer::-webkit-scrollbar {
       display: none; }
   hr {
@@ -558,7 +645,7 @@ nav {
     max-width: 320px; }
   nav {
     position: sticky;
-    grid-template-columns: .5% 1fr 1fr .5%; }
+    grid-template-columns: 0.5% 1fr 1fr 0.5%; }
     nav .logo {
       display: none; }
     nav ul {
@@ -586,46 +673,57 @@ nav {
       display: initial;
       height: 18px; }
     nav.home {
-      grid-template-columns: 1fr 1fr;
+      display: flex;
+      /* grid-template-columns: 1fr 1fr; */
       height: 150px;
+      width: 100%;
       z-index: 1;
-      position: absolute;
-      bottom: 0px; }
-      nav.home h1 {
-        color: #ffffff;
-        width: 85px;
-        height: 55px;
-        font: normal normal 500 25px "Roboto";
-        letter-spacing: 0.4em;
-        line-height: 100%;
-        /* word-wrap: break-word; */
-        justify-self: start;
-        align-self: center; }
-      nav.home p {
-        width: 150px;
-        font: normal normal 100 10px "Roboto";
-        padding-left: 25px;
-        letter-spacing: .05em; }
+      position: fixed;
+      bottom: -1px;
+      left: 0; }
+      nav.home div {
+        flex: 1;
+        margin: auto;
+        padding: 0 0 0 10px; }
+        nav.home div h1 {
+          color: #ffffff;
+          width: 85px;
+          height: 55px;
+          font: normal normal 500 25px "Roboto";
+          letter-spacing: 0.4em;
+          line-height: 100%;
+          justify-self: start;
+          align-self: center; }
+        nav.home div p {
+          float: left;
+          width: 150px;
+          font: normal normal 100 10px "Roboto";
+          padding-left: 25px;
+          letter-spacing: 0.05em;
+          align-content: left;
+          justify-items: left; }
       nav.home ul {
-        padding-left: 50px;
+        flex: 2;
+        margin: auto;
+        /* padding-left: 20px; */
         display: grid;
-        justify-items: end;
+        justify-content: end;
         font: normal normal 300 12px "Roboto";
         letter-spacing: 0.34em;
         grid-template-columns: 2fr 1fr; }
         nav.home ul img {
-          opacity: .6;
+          opacity: 0.6;
           align-self: center;
           justify-self: end;
           grid-column: 1/2;
           grid-row: 1/3;
           height: 60px; }
-      nav.home li {
-        justify-self: center;
-        align-self: center;
-        grid-column: 2/3;
-        display: initial;
-        padding-right: 2.5rem; }
+        nav.home ul li {
+          justify-self: end;
+          align-self: center;
+          grid-column: 2/3;
+          padding-right: 2.5rem;
+          text-justify: right; }
   .hamburger__popup {
     display: none;
     z-index: 999;
@@ -664,7 +762,7 @@ nav {
       color: #ffffff;
       text-decoration: none;
       font: normal normal 300 20px "Roboto";
-      letter-spacing: .3em;
+      letter-spacing: 0.3em;
       justify-items: end; }
   .autoSlides {
     width: 92vw; }
@@ -717,7 +815,8 @@ nav {
     color: #ffffff; }
     #experience #date {
       font: normal normal 400 25px "Roboto";
-      letter-spacing: 0.3em; }
+      letter-spacing: 0.3em;
+      width: 45px; }
   .achievements {
     position: relative;
     margin: 100px auto 500px auto;
@@ -753,23 +852,31 @@ nav {
     text-justify: center;
     word-wrap: normal;
     font: normal normal 400 15px Roboto;
-    letter-spacing: .3em;
+    letter-spacing: 0.3em;
     width: 80%;
     background-size: auto;
     text-overflow: clip;
     word-break: normal; }
   .carousel {
-    height: 10vh;
+    height: 100vh;
     width: 100%;
+    max-height: 84vh;
     max-width: 100vw;
     margin: auto;
-    position: relative; }
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    overflow-y: scroll; }
+    .carousel__track-container {
+      height: 100%;
+      grid-row: 2/3; }
+    .carousel__track {
+      height: 100%;
+      display: block; }
     .carousel__nav {
-      width: 100vw;
-      max-width: 100vw;
-      margin: 15px auto;
-      position: relative;
-      display: flex; }
+      background: green;
+      position: absolute;
+      left: -100vw; }
       .carousel__nav__button {
         margin: auto 15px; }
         .carousel__nav__button img {
@@ -779,32 +886,40 @@ nav {
       max-width: 100vw; }
     .carousel__indicator {
       background-position-y: center;
-      margin: 0 5px;
+      margin: 0;
       width: 10%; }
   .slash img {
-    /* height: 10%; */
-    width: 10%; }
+    display: none; }
   .pinfo {
-    margin: 80px auto;
-    grid-row: auto;
-    max-height: 40vh; }
+    margin: 20px;
+    max-height: 50vh;
+    display: block;
+    grid-row: 1/2;
+    z-index: 3; }
+    .pinfo img {
+      display: none; }
   .ptitle {
-    font: normal normal 600 21px Roboto;
+    margin: 0 auto;
+    font: normal normal 500 20px Roboto;
     letter-spacing: 0.3em;
-    line-height: 1em; }
+    line-height: 1em;
+    text-align: center; }
   .desc {
     padding: 0;
-    margin-top: 20px;
-    margin-bottom: 20px; }
+    width: 90%;
+    margin: 20px auto 20px auto;
+    text-align: center;
+    text-justify: inter-character; }
     .desc__text {
-      font: normal normal 300 12px Roboto;
+      font: normal normal 300 10px Roboto;
       letter-spacing: 0.3em; }
   .pdate {
-    font: normal normal 200 28px Roboto;
+    font: normal normal 200 18px Roboto;
+    width: 28px;
     line-height: 100%;
-    letter-spacing: .2em;
-    text-align: right;
-    background: transparent; } }
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin: 0 auto; } }
 
 /* @media only screen and (min-width:1150px){
     .pinfo{

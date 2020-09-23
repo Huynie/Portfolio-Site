@@ -1,57 +1,58 @@
 /* GALLERY */
 
-.gallery{
-    @extend %container;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    column-gap: 3px;
-    row-gap: 3px;
+.gallery {
+  @extend %container;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 3px;
+  row-gap: 3px;
 
-    & iframe{
-        height: 100%;
-        width: 100%;
-        object-fit: contain;
-/*         &:focus{
+  & iframe {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    /*         &:focus{
             outline: none;
         } */
-    }
+  }
 }
 
-.overlay{
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.overlay {
+  animation: $loadIn;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    &:hover .text{
-        opacity: 1;
-        z-index: 1;
-    }
-    &:hover .zoom{
-        opacity: .5;
-        z-index: 0;
-        /* IE 9 */
-        -ms-transform: scale(1.05); 
-        /* Safari 3-8 */
-        -webkit-transform: scale(1.05); 
-        transform: scale(1.05);
-    }
+  &:hover .text {
+    opacity: 1;
+    z-index: 1;
+  }
+  &:hover .zoom {
+    opacity: 0.5;
+    z-index: 0;
+    /* IE 9 */
+    -ms-transform: scale(1.05);
+    /* Safari 3-8 */
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
 }
-.text{
-    position: absolute;
-    background: transparent;
-    text-align: center;
-    color: $hover-color;
-    font: normal normal 400 20px Roboto;
-    letter-spacing: .5em;
+.text {
+  position: absolute;
+  background: transparent;
+  text-align: center;
+  color: $hover-color;
+  font: normal normal 400 20px Roboto;
+  letter-spacing: 0.5em;
 
-    opacity: 0;
+  opacity: 0;
 }
 .zoom {
-    transition: transform .2s;
-    width: 100%;
-    height: 250px;
-    min-width: 250px;
-    object-fit: cover;
+  transition: transform 0.2s;
+  width: 100%;
+  height: 250px;
+  min-width: 250px;
+  object-fit: cover;
 }
