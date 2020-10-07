@@ -435,6 +435,9 @@ nav {
       height: 100%;
       object-fit: contain;
       background: transparent; }
+    .carousel__slide .vidThumbnail,
+    .carousel li .vidThumbnail {
+      display: hidden; }
   .carousel__nav {
     /* background: green; */
     max-width: 90vw;

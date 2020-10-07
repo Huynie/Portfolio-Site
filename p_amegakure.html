@@ -31,9 +31,12 @@
     <div class="carousel">
         <div class="carousel__track-container">
             <ul class="carousel__track">
-                <li class="carousel__slide">
-                    <video controls type="video/mp4" src="../Assets/images/Amegakure/Final Comp Brightness.mp4">
-                </li>
+                <picture class="carousel__slide">
+                    <video controls type="video/mp4" preload="metadata"  width="1000" height="700">
+                    <source src="./Assets/images/Amegakure/Final Comp Brightness.mp4">
+                    </video>
+                    <img src="./Assets/images/Amegakure/vid_TN.jpg" alt="" class="vidThumbnail">
+                </picture>
                 <picture class="carousel__slide">
                     <source media="(mad-width: 600px)"
                             srcset="">
@@ -73,6 +76,7 @@
                     <source media="(mad-width: 600px)"
                             srcset="">
                     <video controls type="video/mp4" src="../Assets/images/Amegakure/Process.mp4">
+                        <img src="./Assets/images/Amegakure/process_TN.JPG" alt="process thumbnail">
                 </picture>
 
             </ul>

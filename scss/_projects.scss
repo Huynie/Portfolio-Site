@@ -89,6 +89,10 @@
       object-fit: contain;
       background: transparent;
     }
+
+    .vidThumbnail {
+      display: hidden;
+    }
   }
   &__nav {
     /* background: green; */
