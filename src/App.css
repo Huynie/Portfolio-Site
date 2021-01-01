@@ -303,15 +303,7 @@ nav {
   display: grid;
   grid-template-columns: 50% 50%;
   column-gap: 3px;
-  row-gap: 3px;
-  /* & iframe {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-            &:focus{
-            outline: none;
-        }
-  } */ }
+  row-gap: 3px; }
 
 .overlay {
   animation: loadIn 0.8s;
@@ -340,12 +332,12 @@ nav {
   color: #ffffff;
   font: normal normal 400 20px Roboto;
   letter-spacing: 0.5em;
+  text-transform: uppercase;
   opacity: 0; }
 
 .zoom {
   transition: transform 0.2s;
   width: 850px;
-  /* min-width: 250px; */
   object-fit: cover; }
 
 #V4TOU {

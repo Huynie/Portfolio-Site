@@ -204,7 +204,7 @@
         ]
     },
     {
-        "name": "pronged アヒル",
+        "name": "pronged-アヒル",
         "date": "2015",
         "landing": "./Assets/landing/pronged_L.jpg",
         "thumbnail": "./Assets/gallery/pronged_TN.jpg",
@@ -320,7 +320,7 @@
         ]
     },
     {
-        "name": "tree Warriors",
+        "name": "tree-Warriors",
         "date": "2019",
         "landing": "./Assets/landing/treewarriors_L.jpg",
         "thumbnail": "./Assets/gallery/treewarriors_TN.jpg",
