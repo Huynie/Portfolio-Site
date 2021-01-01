@@ -1,6 +1,7 @@
 [
     {
         "name": "0n-1",
+        "pathname": "oni",
         "date": "2019",
         "landing": "./Assets/landing/oni_L.jpg",
         "thumbnail": "./Assets/gallery/oni_TN.jpg",
@@ -49,13 +50,14 @@
     },
     {
         "name": "the village hidden in the rain 雨隠れの里",
+        "pathname": "hiddenrainvillage",
         "date": "2020",
         "landing": "./Assets/landing/amegakure_L.jpg",
         "thumbnail": "./Assets/gallery/amegakure_TN.jpg",
         "image": [
             {
                 "vidLink": "./Assets/images/Amegakure/Final Comp Brightness.mp4",
-                "url": "./Assets/images/Amegakure/vid_TN.jpg",
+                "thumbnail": "./Assets/images/Amegakure/vid_TN.jpg",
                 "caption": "One of my favorite powers out of the Naruto series.  Watch with headphones on! It makes a difference."
             },
             {
@@ -88,7 +90,7 @@
             },
             {
                 "vidLink": "./Assets/images/Amegakure/Process.mp4",
-                "url": "./Assets/images/Amegakure/process_TN.JPG",
+                "thumbnail": "./Assets/images/Amegakure/process_TN.JPG",
                 "caption": ""
             }
         ],
@@ -96,6 +98,7 @@
     },
     {
         "name": "earthFall",
+        "pathname": "earthfall",
         "date": "2018",
         "landing": "./Assets/landing/earthfall_L.jpg",
         "thumbnail": "./Assets/gallery/earthfall_TN.jpg",
@@ -139,7 +142,8 @@
         ]
     },
     {
-        "name": "linq51",
+        "name": "linq 51",
+        "pathname": "linq51",
         "date": "2015",
         "landing": "./Assets/landing/linq51_L.jpg",
         "thumbnail": "./Assets/gallery/linq51_TN.jpg",
@@ -176,6 +180,7 @@
     },
     {
         "name": "portal",
+        "pathname": "portal",
         "date": "2019",
         "landing": "./Assets/landing/portal_L.jpg",
         "thumbnail": "./Assets/gallery/portal_TN.jpg",
@@ -189,6 +194,7 @@
     },
     {
         "name": "prison",
+        "pathname": "prison",
         "date": "2019",
         "landing": "./Assets/landing/prison_L.jpg",
         "thumbnail": "./Assets/gallery/prison_TN.jpg",
@@ -204,7 +210,8 @@
         ]
     },
     {
-        "name": "pronged-アヒル",
+        "name": "pronged アヒル",
+        "pathname": "prongedship",
         "date": "2015",
         "landing": "./Assets/landing/pronged_L.jpg",
         "thumbnail": "./Assets/gallery/pronged_TN.jpg",
@@ -229,6 +236,7 @@
     },
     {
         "name": "resurrection",
+        "pathname": "resurrection",
         "date": "2019",
         "landing": "./Assets/landing/resurrection_L.jpg",
         "thumbnail": "./Assets/gallery/resurrection_TN.jpg",
@@ -265,6 +273,7 @@
     },
     {
         "name": "theocratic",
+        "pathname": "theocratic",
         "date": "2019",
         "landing": "./Assets/landing/theocratic_L.jpg",
         "thumbnail": "./Assets/gallery/theocratic_TN.jpg",
@@ -320,7 +329,8 @@
         ]
     },
     {
-        "name": "tree-Warriors",
+        "name": "tree warriors",
+        "pathname": "treewarriors",
         "date": "2019",
         "landing": "./Assets/landing/treewarriors_L.jpg",
         "thumbnail": "./Assets/gallery/treewarriors_TN.jpg",
@@ -337,6 +347,7 @@
     },
     {
         "name": "v4tou",
+        "pathname": "v4tou",
         "date": "2019",
         "landing": "./Assets/landing/vatou_L.jpg",
         "thumbnail": "./Assets/gallery/vatou_TN.jpg",

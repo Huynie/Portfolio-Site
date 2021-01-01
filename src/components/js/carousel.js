@@ -54,6 +54,7 @@ export const carousel = () => {
   // Dots & Desc function
   dots.forEach((dot, idx) => {
     if (dots.length === 1) {
+      dotsNav.style.display = "none";
       return;
     }else{
       dot.onclick = () => {

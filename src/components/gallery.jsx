@@ -15,7 +15,7 @@ export default function Gallery() {
                         <Link 
                             className="overlay"
                             key={idx} 
-                            to={{ pathname: `/${project.name}` }}>
+                            to={{ pathname: `/${project.pathname}` }}>
                             <div className="text">{project.name}</div>
                             <picture>
                                 <source media="(max-width: 600px)"

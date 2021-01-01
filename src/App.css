@@ -15,7 +15,7 @@
     transform: translateX(0); } }
 
 ::-webkit-scrollbar {
-  width: 10px; }
+  width: 8px; }
   ::-webkit-scrollbar-track {
     background: #222222; }
   ::-webkit-scrollbar-thumb {
@@ -374,34 +374,17 @@ nav {
   min-height: 200px;
   max-width: 1680px;
   width: 100%;
-  margin: 50px auto;
-  /*  &__track {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    position: relative;
-    height: 100%;
-    transition: transform 250ms ease-in;
-  }
-  &__slide {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-  } */ }
+  margin: 50px auto; }
   .carousel video {
     height: calc(2px + 100.962%);
     width: calc(100% + 2px);
     object-fit: cover; }
   .carousel__track-container {
-    /* background: lightgreen; */
-    /* padding: 10px; */
     width: 100%;
     height: 100%;
     position: relative; }
   .carousel__track {
     list-style: none;
-    /* background: green; */
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
@@ -409,7 +392,6 @@ nav {
     object-fit: contain;
     min-width: 100%;
     height: 100%;
-    /* width: 100%; */
     -webkit-overflow-scrolling: touch; }
     .carousel__track::-webkit-scrollbar {
       display: none; }
@@ -430,12 +412,10 @@ nav {
       background: transparent; }
     .carousel__slide .vidThumbnail,
     .carousel li .vidThumbnail {
-      display: hidden; }
+      display: none; }
   .carousel__nav {
-    /* background: green; */
     max-width: 90vw;
     display: flex;
-    /* grid-template-columns: 1fr 1fr 1fr; */
     justify-content: center;
     margin: 30px auto; }
     .carousel__nav__button {
@@ -457,14 +437,10 @@ nav {
     justify-content: center;
     align-items: center;
     position: static;
-    overflow-x: scroll;
-    /* width: 70vw; */
-    /* height: 100%; */
-    /* max-width: 80%; */ }
+    overflow-x: scroll; }
     .carousel__indicContainer::-webkit-scrollbar {
       display: none; }
   .carousel__indicator {
-    /* padding-top: 56.25%; */
     background: url(./assets/slash.svg);
     background-size: cover, contain;
     background-position: center;
@@ -475,29 +451,21 @@ nav {
     max-height: 60px;
     width: 120px;
     height: 60px;
-    /* background: transparent; */
-    /* margin: 0 10px; */
     cursor: pointer;
     outline: none;
-    object-fit: contain;
-    /* img{
-            width: 20px;
-            height: 20px;
-            object-fit: cover;
-        } */ }
+    object-fit: contain; }
   .carousel__indicator.current-slide {
-    /* background: url(../assets/slash.svg); */
     background-repeat: no-repeat;
     opacity: 1;
     border: 0.01rem solid rgba(255, 255, 255, 0.507); }
 
 .pinfo {
-  /*     background-color: teal; */
   max-width: 1680px;
   max-height: 15vh;
   height: auto;
   margin: auto;
   padding: 80px 0;
+  text-transform: uppercase;
   display: grid;
   grid-template-columns: 1fr 2fr 3fr 2fr 1fr;
   align-items: flex-end;
@@ -507,17 +475,16 @@ nav {
   font: normal normal 900 25px Roboto;
   letter-spacing: 0.3em;
   line-height: 1em;
-  /*    max-width: 700px; */
   margin-left: 50px;
   justify-self: start;
-  align-self: start;
-  /*     background-color: thistle; */ }
+  align-self: start; }
 
 .desc {
   justify-self: center;
   align-self: start;
   max-width: 600px;
-  padding-top: 15px; }
+  padding-top: 15px;
+  text-transform: none; }
   .desc__track {
     width: 100%; }
   .desc__text {
@@ -525,7 +492,11 @@ nav {
     color: #cccccc;
     font: normal normal 300 12px Roboto;
     letter-spacing: 0.4em;
-    line-height: 1.5em; }
+    line-height: 1.5em;
+    max-height: 200px;
+    overflow-y: auto; }
+    .desc__text::-webkit-scrollbar {
+      width: 3px; }
 
 .pdate {
   font: normal normal 300 40px Roboto;
@@ -535,11 +506,9 @@ nav {
   margin-right: 50px;
   width: 70px;
   justify-self: end;
-  word-wrap: break-word;
-  /*     background-color: greenyellow; */ }
+  word-wrap: break-word; }
 
 .slash {
-  /* background: url(../assets/Divider.png); */
   justify-self: center;
   align-self: center;
   opacity: 0.5; }
