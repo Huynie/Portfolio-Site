@@ -46,54 +46,46 @@ export default function About () {
                     <div id="title">Experience</div>
                     <div id="date">2019</div>
                     <div id="info">
-                        <h2 id="company">LOTSAGON
-                            <h3 id="role">Concept designer
-                                <p className="thin">
-                                    Various freelance opportunities designing environments, props, and characters.
-                                </p>
-                                <br/>
-                            </h3>
-                        </h2>
+                        <h2 id="company">LOTSAGON</h2>
+                        <h3 id="role">Concept designer</h3>
+                        <p className="thin">
+                            Various freelance opportunities designing environments, props, and characters.
+                        </p>
+                        <br/>
                     </div>
                     <div id="date">2018</div>
                     <div id="info">
-                        <h2 id="company">HOLOSPARK LLC
-                            <h3 id="role">Concept designer
-                                <p className="thin">
-                                    Designed various environments, props, weapons, keyframe illustrations, UI elements, and
-                                    storyboards for the game EarthFall (Shipped).
-                                </p>
-                                <br/>
-                            </h3>
-                        </h2>
+                        <h2 id="company">HOLOSPARK LLC</h2>
+                        <h3 id="role">Concept designer</h3>
+                        <p className="thin">
+                                Designed various environments, props, weapons, keyframe illustrations, UI elements, and
+                                storyboards for the game EarthFall (Shipped).
+                        </p>
+                        <br/>
                     </div>
                     <div id="date">2017</div>
                     <div id="info">
-                        <h2 id="company">RUST LTD
-                            <h3 id="role">Concept designer
-                                <p>
-                                    Designed environments, keyframe illustrations focusing on storytelling, mood, and establishing
-                                    shots for various VR experiences
-                                </p>
-                            </h3>
-                        </h2>
+                        <h2 id="company">RUST LTD</h2>
+                        <h3 id="role">Concept designer</h3>
+                        <p>
+                            Designed environments, keyframe illustrations focusing on storytelling, mood, and establishing
+                            shots for various VR experiences
+                        </p>
                     </div>
                 </div>
                 <div className="achievements">
                     <div id="title">Achievements</div>
                     <div id="date2">2015</div>
                     <div id="info">
-                        <h2 id="school">Bachelors of Arts, Graphic Design
-                            <p>
-                                University of Nevada Las Vegas
-                            </p>
-                        </h2>
+                        <h2 id="school">Bachelors of Arts, Graphic Design</h2>
+                        <p>
+                            University of Nevada Las Vegas
+                        </p>
                     </div>
                     <div id="date2">2019</div>
                     <div id="info">
-                        <h2 id="school">Voyage LA Featured Artist
-                            <p><a href="http://voyagela.com/interview/meet-huy-chau/">voyagela.com/interview/meet-huy-chau/</a></p>
-                        </h2>
+                        <h2 id="school">Voyage LA Featured Artist</h2>
+                        <p><a href="http://voyagela.com/interview/meet-huy-chau/">voyagela.com/interview/meet-huy-chau/</a></p>
                     </div>
                 </div>
             </div>
