@@ -1,0 +1,370 @@
+[
+    {
+        "name": "ON-1",
+        "date": "2019",
+        "landing": "./Assets/landing/oni_L.jpg",
+        "thumbnail": "./Assets/gallery/oni_TN.jpg",
+        "image": [
+            {
+                "url": "./Assets/images/0N-1/S2-Crop-1_1X.jpg",
+                "caption": "Future utilitarian contemporary street wear drug king pin with weird tech."
+            },
+            {
+                "url": "./Assets/images/0N-1/Scenes01_1X.jpg",
+                "caption": "Time To Collect Big or small, all must pay."
+            },
+            {
+                "url": "./Assets/images/0N-1/crop3_1X.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/0N-1/crop4_1X.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/0N-1/Full-Body_1X.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/0N-1/Side-Profile_1X.jpg",
+                "caption": "Side Profile Tabacco and drug quick release augmentation."
+            },
+            {
+                "url": "./Assets/images/0N-1/Back-Head_1X.jpg",
+                "caption": "Back Profile 2 time inmate, 2 time rehabilitated patient, and 2 time on the world's top most wanted list."
+            },
+            {
+                "url": "./Assets/images/0N-1/Tech_1X.jpg",
+                "caption": "Thm Hndz Every crimes calls for a weapon and a quick getaway."
+            },
+            {
+                "url": "./Assets/images/0N-1/Heads-02_1X.jpg",
+                "caption": "Augmentation Exploration."
+            },
+            {
+                "url": "./Assets/images/0N-1/Color-Exploration_1X.jpg",
+                "caption": "Augmentation Exploration."
+            }
+        ]
+    },
+    {
+        "name": "The Village Hidden In The Rain 雨隠れの里",
+        "date": "2020",
+        "landing": "./Assets/landing/amegakure_L.jpg",
+        "thumbnail": "./Assets/gallery/amegakure_TN.jpg",
+        "image": [
+            {
+                "vidLink": "./Assets/images/Amegakure/Final Comp Brightness.mp4",
+                "url": "./Assets/images/Amegakure/vid_TN.jpg",
+                "caption": "One of my favorite powers out of the Naruto series.  Watch with headphones on! It makes a difference."
+            },
+            {
+                "url": "./Assets/images/Amegakure/S9.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/Amegakure/S8.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/Amegakure/S7.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/Amegakure/S6.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/Amegakure/S5.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/Amegakure/S4.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/Amegakure/S8.jpg",
+                "caption": ""
+            },
+            {
+                "vidLink": "./Assets/images/Amegakure/Process.mp4",
+                "url": "./Assets/images/Amegakure/process_TN.JPG",
+                "caption": ""
+            }
+        ],
+        "video": true
+    },
+    {
+        "name": "EarthFall",
+        "date": "2018",
+        "landing": "./Assets/landing/earthfall_L.jpg",
+        "thumbnail": "./Assets/gallery/earthfall_TN.jpg",
+        "image": [
+            {
+                "url": "./Assets/images/EarthFall/Anti-alien-Tactics_2X.jpg",
+                "caption": "Various works for the game EarthFall."
+            },
+            {
+                "url": "./Assets/images/EarthFall/Contact-1_1X.jpg.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/EarthFall/Aliens-and-EMS-1_1X.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/EarthFall/Welder_h.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/EarthFall/Turret-Revision_1X.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/EarthFall/Lantern_h.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/EarthFall/Big-Make-Shfit-Bomb_1X.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/EarthFall/Blade-Barrier_1X.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/EarthFall/C4_UI_1X.jpg",
+                "caption": ""
+            }
+        ]
+    },
+    {
+        "name": "Linq51",
+        "date": "2015",
+        "landing": "./Assets/landing/linq51_L.jpg",
+        "thumbnail": "./Assets/gallery/linq51_TN.jpg",
+        "image": [
+            {
+                "url": "./Assets/images/Linq_51/Linq51-main-city-Fix_2x.jpg",
+                "caption": "Located at the front gate are these defense pods fitted with military grade weapons with trained soldiers on duty."
+            },
+            {
+                "url": "./Assets/images/Linq_51/Linq51-LeftPod_1X.jpg",
+                "caption": "Main are where inhabitants do their daily business of selling goods and services as they rebuild civilization."
+            },
+            {
+                "url": "./Assets/images/Linq_51/Linq51-main-floor_1X.jpg",
+                "caption": "East wing neighborhood, homes for inhabitants."
+            },
+            {
+                "url": "./Assets/images/Linq_51/Linq51-Top-Bunk-V2_1X.jpg",
+                "caption": "Top living quarter of the houseing pods. Enough crawl space for minor movements with natural sunlight. Accessible via retractable ladder to the right leading to the main area."
+            },
+            {
+                "url": "./Assets/images/Linq_51/Linq51-Bottom-Bunk_1X.jpg",
+                "caption": "Main living area upon entering the housing pods."
+            },
+            {
+                "url": "./Assets/images/Linq_51/Linq51-Pod-Village-Final-v2_1X.jpg",
+                "caption": "Lowest level of pod is the bedroom with emergency exit."
+            },
+            {
+                "url": "./Assets/images/Linq_51/Linq51-Sketch_h.jpg",
+                "caption": "Preliminary sketches."
+            }
+        ]
+    },
+    {
+        "name": "Portal",
+        "date": "2019",
+        "landing": "./Assets/landing/portal_L.jpg",
+        "thumbnail": "./Assets/gallery/portal_TN.jpg",
+        "image": [
+            {
+                "url": "./Assets/images/Portal/Portal_2x.jpg",
+                "1x": "./Assets/images/Portal/Portal_1x.jpg",
+                "caption": "A portal to another dimension"
+            }
+        ]
+    },
+    {
+        "name": "Prison",
+        "date": "2019",
+        "landing": "./Assets/landing/prison_L.jpg",
+        "thumbnail": "./Assets/gallery/prison_TN.jpg",
+        "image": [
+            {
+                "url": "./Assets/images/Prison/Prison_1X.jpg",
+                "caption": "Don't even try to leave, they got 2 cutters on deck."
+            },
+            {
+                "url": "./Assets/images/Prison/Prison-Callouts-02_1X.jpg",
+                "caption": "Don't even try to leave, they got 2 cutters on deck."
+            }
+        ]
+    },
+    {
+        "name": "Pronged アヒル",
+        "date": "2015",
+        "landing": "./Assets/landing/pronged_L.jpg",
+        "thumbnail": "./Assets/gallery/pronged_TN.jpg",
+        "image": [
+            {
+                "url": "./Assets/images/Pronged_アヒル/Ship 1.jpg",
+                "caption": "The Goal for this was to design a vehicle that operates on both land and water. So immediately I thought about amphibious animals and their forms. So the first two picks were an alligator and a duck. The last one was a pivot spitball idea of land, water, and air. Although a stingray isn’t an amphibious animal, its form makes for great aerodynamic design and purposes, so I gave that a try in my priliminary exploration and sketching phase. I ended up going with the duck form for its less aggresive and balanced form."
+            },
+            {
+                "url": "./Assets/images/Pronged_アヒル/Ship 2.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/Pronged_アヒル/Ship 3.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/Pronged_アヒル/Thumbnails.jpg",
+                "caption": ""
+            }
+        ]
+    },
+    {
+        "name": "Resurrection",
+        "date": "2019",
+        "landing": "./Assets/landing/resurrection_L.jpg",
+        "thumbnail": "./Assets/gallery/resurrection_TN.jpg",
+        "image": [
+            {
+                "url": "./Assets/images/Resurrection/Cam-3-Final-Blue_2X.jpg",
+                "caption": "Saleginella was known as a key ingredient in the resurrection ritual performed by Taoist priests. It was known as the resurrection plant due to its unique property of curling and shriveling up into a bud-like shape when dried and uncurling, spreading healthy green leaves when accumulating enough moisture.  So what if these plants can actually resurrect cadavers? What if they can take control of cadavers like a parasite taking control of its host? It would be a sight to see corpses being reanimated."
+            },
+            {
+                "url": "./Assets/images/Resurrection/Rise_1X.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/Resurrection/Head_1X.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/Resurrection/Costume_1X.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/Resurrection/Pillars_1X.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/Resurrection/Center_1X.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/Resurrection/Reanimation-Process_h.jpg",
+                "caption": ""
+            }
+        ]
+    },
+    {
+        "name": "Theocratic",
+        "date": "2019",
+        "landing": "./Assets/landing/theocratic_L.jpg",
+        "thumbnail": "./Assets/gallery/theocratic_TN.jpg",
+        "image": [
+            {
+                "url": "./Assets/images/Theocratic_Government/03v2_1x.jpg",
+                "caption": "Theocratic and metabolist government HQ in future earth."
+            },
+            {
+                "url": "./Assets/images/Theocratic_Government/01v2_1X.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/Theocratic_Government/02_1X.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/Theocratic_Government/04_1X.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/Theocratic_Government/05_1X.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/Theocratic_Government/06_1X.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/Theocratic_Government/07_1X.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/Theocratic_Government/08_1X.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/Theocratic_Government/09_1X.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/Theocratic_Government/10_1X.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/Theocratic_Government/11_1X.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/Theocratic_Government/12_1X.jpg",
+                "caption": ""
+            }
+        ]
+    },
+    {
+        "name": "Tree Warriors",
+        "date": "2019",
+        "landing": "./Assets/landing/treewarriors_L.jpg",
+        "thumbnail": "./Assets/gallery/treewarriors_TN.jpg",
+        "image": [
+            {
+                "url": "./Assets/images/Tree_Warriors/Edo_Final_2x.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/Tree_Warriors/Egypt-Tree-Warrior-Final_1X.jpg",
+                "caption": ""
+            }
+        ]
+    },
+    {
+        "name": "V4TOU",
+        "date": "2019",
+        "landing": "./Assets/landing/vatou_L.jpg",
+        "thumbnail": "./Assets/gallery/vatou_TN.jpg",
+        "image": [
+            {
+                "url": "./Assets/images/V4tou/v04_h.jpg",
+                "caption": "Cyber Chicano.  Drive-bys on Saturdays, church on Sundays."
+            },
+            {
+                "url": "./Assets/images/V4tou/Hair.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/V4tou/Knife_h.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/V4tou/Function.gif",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/V4tou/Refined_h.jpg",
+                "caption": ""
+            },
+            {
+                "url": "./Assets/images/V4tou/TN_1X.jpg",
+                "caption": ""
+            }
+        ]
+    }
+]

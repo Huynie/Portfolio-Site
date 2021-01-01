@@ -1,0 +1,49 @@
+$base-color: #080808;
+$font-stack: "Roboto";
+$font-color: #cccccc;
+$hover-color: #ffffff;
+$loadIn: loadIn 0.8s;
+$hamburger: hamburger 0.4s;
+
+@keyframes loadIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hamburger {
+  from {
+    opacity: 0;
+    transform: translateX(180px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+
+  &-track {
+    background: rgb(34, 34, 34);
+  }
+  &-thumb {
+    background: rgb(82, 82, 82);
+
+    &:hover {
+      background: gray;
+    }
+  }
+}
+
+%container {
+  max-width: 1680px;
+  margin: auto;
+  overflow: hidden;
+}

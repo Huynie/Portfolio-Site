@@ -1,0 +1,133 @@
+/* NAVIGATION */
+:focus {
+  outline: none;
+}
+hr {
+  @extend %container;
+
+  background-color: #464646;
+  height: 0.1px;
+  border-width: 0;
+  border: 0;
+}
+nav {
+  @extend %container;
+
+  /*     background: $base-color; */
+  height: 80px;
+  width: auto;
+  display: grid;
+  grid-template-columns: 3% 1fr 1fr 3%;
+  align-items: center;
+  overflow: hidden;
+
+  .logo {
+    text-decoration: none;
+    text-align: left;
+    color: $hover-color;
+    width: 85px;
+    font: normal normal 500 24px $font-stack;
+    letter-spacing: 0.3em;
+    line-height: 80%;
+    word-wrap: break-word;
+    grid-column: 2/3;
+
+    &:hover {
+      color: $font-color;
+      cursor: pointer;
+    }
+    &:focus {
+      color: $font-color;
+      cursor: pointer;
+    }
+  }
+  h1 {
+    width: 180px;
+    height: 95px;
+    left: 221px;
+    top: 59px;
+    font: normal normal 700 48px $font-stack;
+    line-height: 87.19%;
+    letter-spacing: 0.31em;
+    padding-left: 1em;
+    float: left;
+  }
+  ul {
+    list-style: none;
+    word-spacing: 10px;
+    grid-column: 3/4;
+    justify-self: end;
+    font: normal normal 350 11px $font-stack;
+    letter-spacing: 0.25em;
+  }
+  li {
+    padding-left: 1em;
+    display: inline;
+  }
+  a {
+    color: $font-color;
+    text-decoration: none;
+
+    &:hover {
+      color: $hover-color;
+    }
+    &:focus {
+      color: $hover-color;
+    }
+  }
+  .pageTitle {
+    color: $hover-color;
+  }
+  .slash {
+    display: none;
+  }
+  button {
+    display: none;
+  }
+  &.home {
+    height: 220px;
+
+    &__logo {
+      text-decoration: none;
+      text-align: left;
+      color: $hover-color;
+      width: 85px;
+      font: normal normal 500 24px $font-stack;
+      letter-spacing: 0.3em;
+      line-height: 80%;
+      word-wrap: break-word;
+      grid-column: 2/3;
+
+      &:hover {
+        color: $font-color;
+        cursor: pointer;
+      }
+      &:focus {
+        color: $font-color;
+        cursor: pointer;
+      }
+    }
+    ul {
+      font: normal normal 300 12px $font-stack;
+      letter-spacing: 0.34em;
+    }
+    li {
+      padding-right: 2.5rem;
+    }
+    p {
+      display: block;
+      float: left;
+      grid-column: 2/3;
+      font: normal normal 100 15px $font-stack;
+      padding-left: 3.2em;
+      letter-spacing: 0.05em;
+    }
+  }
+  #isHidden {
+    display: none;
+  }
+}
+.hamburger__popup {
+  animation: $hamburger;
+  display: none;
+}
