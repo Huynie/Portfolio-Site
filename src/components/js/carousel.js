@@ -21,8 +21,6 @@ export const carousel = () => {
   //Swipe slider and dots
   const options = { threshold: 0.5, root: track };
   const observer = new IntersectionObserver((entries) => {
-
-    console.log(entries)
     entries.forEach((entry) => {
       const index = entry.target.id;
       // When slides are pass mid point

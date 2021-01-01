@@ -7,10 +7,10 @@ import ArrowL from '../assets/Arrow_L.svg';
 import ArrowR from '../assets/Arrow_R.svg';
 import NavBar from './nav';
 
-export default function Projects( props ) {
+export default function Projects() {
     const { projects } = useContext(projectsContext);
-    // select project based on id passed from gallery link when clicked
-    const selectedProject = projects[props.location.state.idx];
+    // select project based on url pathname
+    const selectedProject = projects.find(project => project.name === window.location.pathname.substring(1));
     
     useEffect(() => {
         carousel();

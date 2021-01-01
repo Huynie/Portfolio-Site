@@ -1,6 +1,6 @@
 [
     {
-        "name": "ON-1",
+        "name": "0n-1",
         "date": "2019",
         "landing": "./Assets/landing/oni_L.jpg",
         "thumbnail": "./Assets/gallery/oni_TN.jpg",
@@ -48,7 +48,7 @@
         ]
     },
     {
-        "name": "The Village Hidden In The Rain 雨隠れの里",
+        "name": "the village hidden in the rain 雨隠れの里",
         "date": "2020",
         "landing": "./Assets/landing/amegakure_L.jpg",
         "thumbnail": "./Assets/gallery/amegakure_TN.jpg",
@@ -95,7 +95,7 @@
         "video": true
     },
     {
-        "name": "EarthFall",
+        "name": "earthFall",
         "date": "2018",
         "landing": "./Assets/landing/earthfall_L.jpg",
         "thumbnail": "./Assets/gallery/earthfall_TN.jpg",
@@ -139,7 +139,7 @@
         ]
     },
     {
-        "name": "Linq51",
+        "name": "linq51",
         "date": "2015",
         "landing": "./Assets/landing/linq51_L.jpg",
         "thumbnail": "./Assets/gallery/linq51_TN.jpg",
@@ -175,7 +175,7 @@
         ]
     },
     {
-        "name": "Portal",
+        "name": "portal",
         "date": "2019",
         "landing": "./Assets/landing/portal_L.jpg",
         "thumbnail": "./Assets/gallery/portal_TN.jpg",
@@ -188,7 +188,7 @@
         ]
     },
     {
-        "name": "Prison",
+        "name": "prison",
         "date": "2019",
         "landing": "./Assets/landing/prison_L.jpg",
         "thumbnail": "./Assets/gallery/prison_TN.jpg",
@@ -204,7 +204,7 @@
         ]
     },
     {
-        "name": "Pronged アヒル",
+        "name": "pronged アヒル",
         "date": "2015",
         "landing": "./Assets/landing/pronged_L.jpg",
         "thumbnail": "./Assets/gallery/pronged_TN.jpg",
@@ -228,7 +228,7 @@
         ]
     },
     {
-        "name": "Resurrection",
+        "name": "resurrection",
         "date": "2019",
         "landing": "./Assets/landing/resurrection_L.jpg",
         "thumbnail": "./Assets/gallery/resurrection_TN.jpg",
@@ -264,7 +264,7 @@
         ]
     },
     {
-        "name": "Theocratic",
+        "name": "theocratic",
         "date": "2019",
         "landing": "./Assets/landing/theocratic_L.jpg",
         "thumbnail": "./Assets/gallery/theocratic_TN.jpg",
@@ -320,7 +320,7 @@
         ]
     },
     {
-        "name": "Tree Warriors",
+        "name": "tree Warriors",
         "date": "2019",
         "landing": "./Assets/landing/treewarriors_L.jpg",
         "thumbnail": "./Assets/gallery/treewarriors_TN.jpg",
@@ -336,7 +336,7 @@
         ]
     },
     {
-        "name": "V4TOU",
+        "name": "v4tou",
         "date": "2019",
         "landing": "./Assets/landing/vatou_L.jpg",
         "thumbnail": "./Assets/gallery/vatou_TN.jpg",
