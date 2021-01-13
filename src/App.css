@@ -695,10 +695,6 @@ footer {
         padding: 20px 0; }
         nav .menu__item a {
           background: transparent; }
-      nav .menu .slash {
-        opacity: 1;
-        display: block;
-        height: 18px; }
     nav .toggle {
       display: block;
       z-index: 3;
