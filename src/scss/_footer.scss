@@ -1,0 +1,10 @@
+// FOOTER
+footer {
+  width: 100%;
+  & > div {
+    margin: 10px auto;
+    width: max-content;
+    font: normal normal 300 14px Roboto;
+    letter-spacing: 0.1rem;
+  }
+}

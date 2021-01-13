@@ -8,13 +8,23 @@ export default function NavBar() {
         <>
              <nav>
                 <Link className="logo" to={{pathname:"/"}}>Huy Chau</Link>
-                <ul>
-                    <li className="menu" id="isHidden"><Link to={{pathname:"/"}}>Home</Link></li>
-                    <li className="pageTitle"><Link to={{pathname:"/gallery"}}>Work</Link></li>
-                    <li className="menu"><Link to={{pathname:"/about"}}>About</Link></li>
-                    <img className="slash" src={Divider} alt="#"></img>
+                
+                <input className="toggle" type="checkbox"></input>
+                <div className="hamburger">
+                    <div></div>
+                </div>
+
+                <ul className="menu" id="menu">
+                    {/* <li className="menu__item" id="isHidden"><Link to={{pathname:"/"}}>Home</Link></li> */}
+                    <li className="menu__item"><Link to={{pathname:"/gallery"}}>Work</Link></li>
+                    <li className="menu__item"><Link to={{pathname:"/about"}}>About</Link></li>
+                    <img className="slash" src={Divider} alt="#"/>
                 </ul>
-                <button type="menu" className="hamburger"></button>
+                
+                {/* <div className="hamburger__menu">
+
+                </div> */}
+
             </nav>
         </>
         

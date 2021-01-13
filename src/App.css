@@ -23,7 +23,7 @@
     ::-webkit-scrollbar-thumb:hover {
       background: gray; }
 
-hr, nav, .gallery {
+hr, nav, .home, .gallery {
   max-width: 1680px;
   margin: auto;
   overflow: hidden; }
@@ -39,13 +39,13 @@ hr {
   border: 0; }
 
 nav {
-  /*     background: $base-color; */
   height: 80px;
   width: auto;
   display: grid;
   grid-template-columns: 3% 1fr 1fr 3%;
   align-items: center;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 1; }
   nav .logo {
     text-decoration: none;
     text-align: left;
@@ -62,7 +62,49 @@ nav {
     nav .logo:focus {
       color: #cccccc;
       cursor: pointer; }
-  nav h1 {
+  nav .menu {
+    list-style: none;
+    word-spacing: 10px;
+    grid-column: 3/4;
+    justify-self: end;
+    font: normal normal 350 11px "Roboto";
+    letter-spacing: 0.25em; }
+    nav .menu__item {
+      padding-left: 1em;
+      display: inline; }
+      nav .menu__item a {
+        color: #cccccc;
+        text-decoration: none; }
+        nav .menu__item a:hover {
+          color: #ffffff; }
+        nav .menu__item a:focus {
+          color: #ffffff; }
+    nav .menu .slash {
+      display: none; }
+  nav .pageTitle {
+    color: #ffffff; }
+  nav .hamburger {
+    display: none; }
+  nav .toggle {
+    display: none; }
+  nav #isHidden {
+    display: none; }
+
+/* HOME */
+.home {
+  height: 220px;
+  width: auto;
+  display: grid;
+  grid-template-columns: 3% 1fr 1fr 3%;
+  align-items: center;
+  overflow: hidden; }
+  .home__logo:hover {
+    color: #cccccc;
+    cursor: pointer; }
+  .home__logo:focus {
+    color: #cccccc;
+    cursor: pointer; }
+  .home__logo h1 {
     width: 180px;
     height: 95px;
     left: 221px;
@@ -72,67 +114,34 @@ nav {
     letter-spacing: 0.31em;
     padding-left: 1em;
     float: left; }
-  nav ul {
+  .home__logo p {
+    display: block;
+    float: left;
+    grid-column: 2/3;
+    font: normal normal 100 15px "Roboto";
+    padding-left: 3.2em;
+    letter-spacing: 0.05em; }
+  .home ul {
+    font: normal normal 300 12px "Roboto";
+    letter-spacing: 0.34em;
     list-style: none;
     word-spacing: 10px;
     grid-column: 3/4;
-    justify-self: end;
-    font: normal normal 350 11px "Roboto";
-    letter-spacing: 0.25em; }
-  nav li {
-    padding-left: 1em;
-    display: inline; }
-  nav a {
-    color: #cccccc;
-    text-decoration: none; }
-    nav a:hover {
-      color: #ffffff; }
-    nav a:focus {
-      color: #ffffff; }
-  nav .pageTitle {
-    color: #ffffff; }
-  nav .slash {
-    display: none; }
-  nav button {
-    display: none; }
-  nav.home {
-    height: 220px; }
-    nav.home__logo {
-      text-decoration: none;
-      text-align: left;
-      color: #ffffff;
-      width: 85px;
-      font: normal normal 500 24px "Roboto";
-      letter-spacing: 0.3em;
-      line-height: 80%;
-      word-wrap: break-word;
-      grid-column: 2/3; }
-      nav.home__logo:hover {
+    justify-self: end; }
+    .home ul .slash {
+      display: none; }
+    .home ul li {
+      display: inline;
+      padding-right: 2.5rem;
+      padding-left: 1em; }
+      .home ul li a {
         color: #cccccc;
-        cursor: pointer; }
-      nav.home__logo:focus {
-        color: #cccccc;
-        cursor: pointer; }
-    nav.home ul {
-      font: normal normal 300 12px "Roboto";
-      letter-spacing: 0.34em; }
-    nav.home li {
-      padding-right: 2.5rem; }
-    nav.home p {
-      display: block;
-      float: left;
-      grid-column: 2/3;
-      font: normal normal 100 15px "Roboto";
-      padding-left: 3.2em;
-      letter-spacing: 0.05em; }
-  nav #isHidden {
-    display: none; }
+        text-decoration: none; }
+        .home ul li a:hover {
+          color: #ffffff; }
+        .home ul li a:focus {
+          color: #ffffff; }
 
-.hamburger__popup {
-  animation: hamburger 0.4s;
-  display: none; }
-
-/* HOME */
 .autoSlides {
   z-index: 0;
   background-color: black;
@@ -520,6 +529,14 @@ nav {
 .desc-show {
   display: block; }
 
+footer {
+  width: 100%; }
+  footer > div {
+    margin: 10px auto;
+    width: max-content;
+    font: normal normal 300 14px Roboto;
+    letter-spacing: 0.1rem; }
+
 @media only screen and (max-width: 1000px) {
   /* .carousel {
     max-height: 40vh;
@@ -623,124 +640,141 @@ nav {
     grid-template-columns: 0.5% 1fr 1fr 0.5%; }
     nav .logo {
       display: none; }
-    nav ul {
-      grid-column: 2/3;
-      justify-self: left;
-      font: normal normal 300 18px "Roboto"; }
-    nav a {
-      color: #ffffff; }
-    nav .menu {
-      display: none; }
-    nav li .pageTitle {
-      cursor: text; }
-    nav button {
+    nav .hamburger {
       display: block;
-      height: 60px;
-      width: 15px;
-      grid-column: 3/4;
+      height: 100%;
+      width: 30px;
+      animation: hamburger 0.4s;
       justify-self: right;
-      background: url(./assets/hamburger-icon.png) no-repeat right bottom;
-      background-size: 100% 80%;
-      border: none;
-      cursor: pointer; }
-    nav .slash {
-      opacity: 1;
-      display: initial;
-      height: 18px; }
-    nav.home {
-      display: flex;
-      /* grid-template-columns: 1fr 1fr; */
-      height: 150px;
-      width: 100%;
-      z-index: 1;
+      cursor: pointer;
+      grid-column: 3/4;
+      z-index: 2;
+      background: transparent; }
+      nav .hamburger > div {
+        height: 1px;
+        background: white;
+        position: relative;
+        top: 40px;
+        width: 100%;
+        transition: all 0.4s ease; }
+        nav .hamburger > div:before, nav .hamburger > div:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          top: -20px;
+          background: inherit; }
+        nav .hamburger > div:after {
+          top: 20px; }
+      nav .hamburger .pageTitle {
+        font: normal normal 300 20px "Roboto";
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        color: #ffffff;
+        background: transparent;
+        position: relative;
+        padding: 20px 0; }
+    nav .menu {
+      width: 180px;
+      max-height: 300px;
       position: fixed;
-      bottom: -1px;
-      left: 0; }
-      nav.home div {
-        flex: 1;
-        margin: auto;
-        padding: 0 0 0 10px; }
-        nav.home div h1 {
-          color: #ffffff;
-          width: 85px;
-          height: 55px;
-          font: normal normal 500 25px "Roboto";
-          letter-spacing: 0.4em;
-          line-height: 100%;
-          justify-self: start;
-          align-self: center; }
-        nav.home div p {
-          float: left;
-          width: 150px;
-          font: normal normal 100 10px "Roboto";
-          padding-left: 25px;
-          letter-spacing: 0.05em;
-          align-content: left;
-          justify-items: left; }
-      nav.home ul {
-        flex: 2;
-        margin: auto;
-        /* padding-left: 20px; */
-        display: grid;
-        justify-content: end;
-        font: normal normal 300 12px "Roboto";
-        letter-spacing: 0.34em;
-        grid-template-columns: 2fr 1fr; }
-        nav.home ul img {
-          opacity: 0.6;
-          align-self: center;
-          justify-self: end;
-          grid-column: 1/2;
-          grid-row: 1/3;
-          height: 60px; }
-        nav.home ul li {
-          justify-self: end;
-          align-self: center;
-          grid-column: 2/3;
-          padding-right: 2.5rem;
-          text-justify: right; }
-  .hamburger__popup {
-    display: none;
-    z-index: 999;
-    width: 180px;
-    height: 300px;
+      right: -180px;
+      top: 0;
+      background-color: rgba(24, 24, 24, 0.9);
+      transition: all 0.4s ease;
+      padding: 80px 0 20px 0; }
+      nav .menu__item {
+        color: #cccccc;
+        font: normal normal 300 20px "Roboto";
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        background: transparent;
+        position: relative;
+        padding: 20px 0; }
+        nav .menu__item a {
+          background: transparent; }
+      nav .menu .slash {
+        opacity: 1;
+        display: block;
+        height: 18px; }
+    nav .toggle {
+      display: block;
+      z-index: 3;
+      opacity: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 80px;
+      height: 80px; }
+      nav .toggle:checked ~ .menu {
+        right: 0;
+        transition: all 0.4s ease; }
+      nav .toggle:checked ~ .menu--transparency {
+        visibility: visible;
+        z-index: 90;
+        opacity: 1;
+        transition: opacity 0.4s ease; }
+      nav .toggle:checked ~ .hamburger > div {
+        transform: rotate(45deg);
+        transition-delay: 0.05s; }
+        nav .toggle:checked ~ .hamburger > div:before, nav .toggle:checked ~ .hamburger > div:after {
+          top: 0;
+          transform: rotate(90deg); }
+  .home {
+    display: flex;
+    /* grid-template-columns: 1fr 1fr; */
+    height: 150px;
+    width: 100%;
+    z-index: 1;
     position: fixed;
-    right: 0;
-    top: 0;
-    background-color: rgba(24, 24, 24, 0.9);
-    /* justify-content: center;
-      align-items: center; */ }
-    .hamburger__popup .pageTitle {
-      font: normal normal 300 20px "Roboto";
-      display: block;
-      text-decoration: none;
-      text-align: center;
-      color: #ffffff;
-      background: transparent;
-      position: relative;
-      padding: 20px 0; }
-    .hamburger__popup .menu {
-      color: #cccccc;
-      font: normal normal 300 20px "Roboto";
-      display: block;
-      text-decoration: none;
-      text-align: center;
-      background: transparent;
-      position: relative;
-      padding: 20px 0; }
-    .hamburger__popup#active {
-      display: block; }
-    .hamburger__popup--items {
-      top: 50px;
-      position: relative;
-      display: block;
-      color: #ffffff;
-      text-decoration: none;
-      font: normal normal 300 20px "Roboto";
-      letter-spacing: 0.3em;
-      justify-items: end; }
+    bottom: -1px;
+    left: 0; }
+    .home__logo {
+      flex: 1 1;
+      margin: auto;
+      padding: 0 0 0 10px;
+      width: auto; }
+      .home__logo h1 {
+        color: #ffffff;
+        width: 85px;
+        height: 55px;
+        font: normal normal 500 25px "Roboto";
+        letter-spacing: 0.4em;
+        line-height: 100%;
+        justify-self: start;
+        align-self: center; }
+      .home__logo p {
+        float: left;
+        width: 150px;
+        font: normal normal 100 10px "Roboto";
+        padding-left: 25px;
+        letter-spacing: 0.05em;
+        align-content: left;
+        justify-items: left; }
+    .home ul {
+      flex: 2;
+      margin: auto;
+      display: grid;
+      justify-content: end;
+      font: normal normal 300 12px "Roboto";
+      letter-spacing: 0.34em;
+      grid-template-columns: 2fr 1fr; }
+      .home ul .slash {
+        display: block;
+        opacity: 0.6;
+        align-self: center;
+        justify-self: end;
+        grid-column: 1/2;
+        grid-row: 1/3;
+        height: 60px; }
+      .home ul li {
+        justify-self: end;
+        align-self: center;
+        grid-column: 2/3; }
   .autoSlides {
-    width: 92vw; }
+    width: 100%; }
   #page {
     display: block;
     position: static;
@@ -835,7 +869,7 @@ nav {
   .carousel {
     height: 100vh;
     width: 100%;
-    max-height: 84vh;
+    max-height: 100vh;
     max-width: 100vw;
     margin: auto;
     position: relative;
@@ -870,7 +904,7 @@ nav {
     max-height: 50vh;
     display: block;
     grid-row: 1/2;
-    z-index: 3; }
+    padding: 50px 0; }
     .pinfo img {
       display: none; }
   .ptitle {
@@ -887,7 +921,10 @@ nav {
     text-justify: inter-character; }
     .desc__text {
       font: normal normal 300 10px Roboto;
-      letter-spacing: 0.3em; }
+      letter-spacing: 0.3em;
+      display: none; }
+    .desc #main-desc {
+      display: block; }
   .pdate {
     font: normal normal 200 18px Roboto;
     width: 28px;

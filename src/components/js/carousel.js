@@ -4,10 +4,10 @@ export const carousel = () => {
   const nextButton = document.querySelector(".carousel__nav__button--right");
   const prevButton = document.querySelector(".carousel__nav__button--left");
   const dotsNav = document.querySelector(".carousel__indicContainer");
-  const dots = document.querySelectorAll('.carousel__indicator');
+  const dots = document.querySelectorAll(".carousel__indicator");
   const desc = document.querySelectorAll(".desc__text");
 
-  //Assigns empty description div inner text to be first div's inner text
+  // copy first description to empty descriptions
   desc.forEach((text) => {
     if (text.innerHTML === "") {
       text.innerHTML = desc[0].innerHTML;
@@ -75,9 +75,8 @@ export const carousel = () => {
 
   // Set indicator thumbnails
   const CarImg = document.querySelectorAll(".carousel__slide img");
-  const TN = document.querySelectorAll("input");
 
-  TN.forEach((dot, idx) => {
+  dots.forEach((dot, idx) => {
     dot.style.backgroundImage = `url(${CarImg[idx].src})`;
   });
 };

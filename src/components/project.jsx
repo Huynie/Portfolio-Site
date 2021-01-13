@@ -1,11 +1,13 @@
 import React, { useEffect, useContext } from 'react';
 import { carousel } from './js/carousel';
+import { lightbox } from './js/lightbox';
 import { projectsContext } from './context_api';
 import Divider from '../assets/Divider.svg';
 import DividerDbl from '../assets/Divider_dbl.svg';
 import ArrowL from '../assets/Arrow_L.svg';
 import ArrowR from '../assets/Arrow_R.svg';
 import NavBar from './nav';
+import Footer from './footer';
 
 export default function Projects() {
     const { projects } = useContext(projectsContext);
@@ -14,10 +16,17 @@ export default function Projects() {
     const selectedProject = projects
         .find(project => project.pathname === pathname);
 
-    console.log(window.location.pathname)
+    
     
     useEffect(() => {
+        // Set first description as 'main' description
+        document.querySelector('.desc__text').id = 'main-desc'; 
         carousel();
+        lightbox();
+        return () => {
+            carousel();
+            lightbox();
+        }
     },[]);
 
     return (
@@ -101,6 +110,7 @@ export default function Projects() {
                         <img className="slash" src={DividerDbl} alt="#"/>
                         <div className="pdate">{selectedProject.date}</div>
                     </div>
+                    <Footer/>
                 </div>
             </div>
         </>

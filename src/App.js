@@ -19,6 +19,5 @@ export default function App() {
         </Switch>
       </ContextApi>
     </Router>
-    
   );
 }

@@ -7,6 +7,7 @@ import {slideShowLoop} from './js/slideShow';
 export default function Home () {
     const { projects } = useContext(projectsContext);
 
+    // start slideshow loop
     useEffect(() => {
         if (document.querySelectorAll('.autoSlides__slides')){
             slideShowLoop();
@@ -16,22 +17,15 @@ export default function Home () {
         }
     }, [])
 
-    // useEffect(()=>{
-    //     console.log('start function');
-    //     return () => {
-    //         console.log('unmount and cleanup')
-    //     }
-    // },[])
-
     return(
         <>
             <nav className="home">
-                    <div>
-                        <h1 className="home__logo">Huy Chau</h1>
+                    <div className="home__logo">
+                        <h1 >Huy Chau</h1>
                         <p>Concept.Design.Illustrate</p>
                     </div>
                     <ul>
-                        <img className="slash" src={Divider} alt="#"></img>
+                        <img className="slash" src={Divider} alt="#"/>
                         <li><Link to={{pathname:"/gallery"}}>Work</Link></li>
                         <li><Link to={{pathname:"/about"}}>About</Link></li>
                     </ul>

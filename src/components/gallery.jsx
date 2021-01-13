@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { projectsContext } from './context_api';
 import { Link } from "react-router-dom";
 import NavBar from './nav';
+import Footer from './footer';
 
 export default function Gallery() {
     const { projects } = useContext(projectsContext);
@@ -26,6 +27,7 @@ export default function Gallery() {
                     )
                 })}
             </div>
+            <Footer/>
         </>
     )
 }
