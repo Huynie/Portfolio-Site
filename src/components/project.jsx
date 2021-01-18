@@ -16,8 +16,6 @@ export default function Projects() {
     const selectedProject = projects
         .find(project => project.pathname === pathname);
 
-    
-    
     useEffect(() => {
         // Set first description as 'main' description
         document.querySelector('.desc__text').id = 'main-desc'; 

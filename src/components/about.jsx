@@ -9,6 +9,7 @@ import AS from '../assets/as_white.png';
 import Avatar from '../assets/avatar.jpg';
 
 export default function About () {
+    
     return(
         <>
             <NavBar/>

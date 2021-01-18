@@ -40,6 +40,20 @@
 
     .logo {
       display: none;
+      pointer-events: none;
+      // content: "Gallery";
+      width: auto;
+    }
+    .pageTitle {
+      display: flex;
+      font: normal normal 500 20px $font-stack;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+
+      img {
+        height: 30px;
+        margin: 0 20px;
+      }
     }
 
     .hamburger {
@@ -213,8 +227,6 @@
   //ABOUT
   .aboutDesktop {
     display: block;
-    .section {
-    }
   }
 
   //GALLERY

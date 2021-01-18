@@ -62,6 +62,8 @@ nav {
     nav .logo:focus {
       color: #cccccc;
       cursor: pointer; }
+  nav .pageTitle {
+    display: none; }
   nav .menu {
     list-style: none;
     word-spacing: 10px;
@@ -518,7 +520,17 @@ footer {
     position: sticky;
     grid-template-columns: 0.5% 1fr 1fr 0.5%; }
     nav .logo {
-      display: none; }
+      display: none;
+      pointer-events: none;
+      width: auto; }
+    nav .pageTitle {
+      display: flex;
+      font: normal normal 500 20px "Roboto";
+      letter-spacing: 0.2em;
+      text-transform: uppercase; }
+      nav .pageTitle img {
+        height: 30px;
+        margin: 0 20px; }
     nav .hamburger {
       display: block;
       height: 100%;
