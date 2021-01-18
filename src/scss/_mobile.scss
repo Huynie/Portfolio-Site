@@ -1,90 +1,11 @@
 // MOBILE
 
-@media only screen and (max-width: 1000px) {
-  /* .carousel {
-    max-height: 40vh;
+// @media only screen and (max-width: 1000px) {
 
-    .pinfo {
-      height: auto;
-      margin: 100px auto;
-      padding: 0;
-
-      display: grid;
-      grid-template-columns: 70% 30%;
-      grid-template-rows: 0.5fr 2fr 0.5fr;
-
-      & img {
-        display: none;
-      }
-    }
-    .ptitle {
-      padding: 0;
-      margin: 0;
-      align-self: end;
-    }
-    .desc {
-      max-width: 1000ch;
-      font: normal normal 300 11px Roboto;
-      margin-left: 30px;
-      margin-top: 8px;
-      grid-column: 1/3;
-    }
-    .pdate {
-      font: normal normal 200 30px Roboto;
-      max-width: 50px;
-      margin: 0;
-      justify-self: end;
-      align-self: flex-start;
-      grid-column: 2/3;
-    }
-    .slash img {
-      width: 50%;
-      align-self: center;
-      justify-self: left;
-    }
-  } */
-}
+// }
 @media only screen and (max-width: 1150px) {
   #page {
     display: initial;
-  }
-  #profile {
-    margin: auto;
-    padding: 0 0 0 30px;
-    justify-self: center;
-  }
-  #about {
-    margin-top: 100px;
-    margin-right: 80px;
-  }
-  #experience {
-    width: auto;
-    max-width: 580px;
-    padding: 0;
-    margin: auto;
-    float: left;
-    float: right;
-  }
-  #date {
-    margin-left: 50px;
-  }
-  #academics {
-    width: 700px;
-    float: left;
-    margin: auto;
-    grid-template-columns: 22% 78%;
-    grid-auto-rows: minmax(50px, auto);
-  }
-  #school {
-    margin-top: 5px;
-  }
-  #date2 {
-    margin-left: 50px;
-    line-height: 10%;
-    letter-spacing: 0.2em;
-    width: 60px;
-    font: normal normal 300 31.5px Roboto;
-    letter-spacing: 0.2em;
   }
   .carousel {
     max-height: 55vh;
@@ -290,99 +211,12 @@
     width: 100%;
   }
   //ABOUT
-  #page {
+  .aboutDesktop {
     display: block;
-    position: static;
-    overflow: hidden;
-    height: 100%;
-    max-height: 1050px;
-  }
-  #profile {
-    position: relative;
-    height: 220px;
-    /* width: 400px; */
-
-    #Avatar {
-      padding: 20px 0 5px 0;
-      height: 100px;
-      width: 100px;
-    }
-    #about {
-      display: flex;
-      float: left;
-      width: 28%;
-      height: 30%;
-      padding: 0;
-      margin: 70px 30px auto 50px;
-      font: normal normal 300 9px Roboto;
-      line-height: 150%;
-
-      img {
-        height: 65px;
-        padding: 0 20px 0px 0px;
-      }
-      text {
-        top: 50px;
-      }
-    }
-    #name {
-      font-size: 45px;
-      height: auto;
-      width: 50%;
-      padding: 8px 0px;
-      color: $hover-color;
-    }
-    #social {
-      width: 100%;
-      a {
-        opacity: 1;
-      }
+    .section {
     }
   }
-  #experience {
-    position: relative;
-    height: 100%;
-    margin: 100px auto 10px auto;
-    padding-right: 8px;
-    grid-column: 1/2;
-    grid-row: 2/3;
-    grid-auto-rows: minmax(auto, auto);
-    color: $hover-color;
 
-    #date {
-      font: normal normal 400 25px $font-stack;
-      letter-spacing: 0.3em;
-      width: 45px;
-    }
-  }
-  .achievements {
-    position: relative;
-    margin: 100px auto 500px auto;
-    padding-right: 8px;
-    height: 100%;
-    width: 100%;
-    grid-column: 1/2;
-    grid-row: 2/3;
-    grid-auto-rows: minmax(auto, auto);
-    color: $hover-color;
-
-    #date2 {
-      font: normal normal 400 25px Roboto;
-      padding-bottom: 20px;
-    }
-    p {
-      color: $font-color;
-      font: normal normal 300 12px Roboto;
-      line-height: 160%;
-      letter-spacing: 0.2em;
-    }
-    #school {
-      font: normal normal 900 12px Roboto;
-      letter-spacing: 0.2em;
-      padding: 0;
-      line-height: 100%;
-    }
-  }
   //GALLERY
   .gallery {
     margin-top: 20px;

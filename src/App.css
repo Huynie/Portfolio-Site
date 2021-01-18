@@ -180,132 +180,86 @@ nav {
   font: normal normal 700 12px Roboto;
   letter-spacing: 0.3em; }
 
-#page {
-  max-width: 1680px;
-  height: 80vh;
+.aboutDesktop {
+  max-width: 700px;
+  height: 100vh;
   margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1.5fr 4.5fr;
-  grid-template-rows: 1fr 1fr;
-  overflow: hidden; }
-
-#profile {
-  height: 450px;
-  width: 600px;
-  grid-column: 2/4;
-  grid-row: 1/3;
-  margin: 250px auto 350px auto;
-  padding: 0 775px 0 50px; }
-  #profile #Avatar {
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-    padding: 20px 0 20px 0;
-    float: left; }
-  #profile #about {
-    font: normal normal 300 11px Roboto;
-    line-height: 172.19%;
-    letter-spacing: 0.25em;
-    height: 150px;
-    width: 270px;
-    padding-top: 50px;
-    margin-right: 60px;
-    float: right;
-    display: grid;
-    grid-template-columns: 1fr 2fr; }
-  #profile #name {
-    font: normal normal 700 48px Roboto;
-    letter-spacing: 0.3em;
-    line-height: 90%;
-    height: 300px;
-    width: 200px;
-    padding: 25px 0px; }
-  #profile #social a {
-    opacity: 70%;
-    text-decoration: none; }
-  #profile #social :hover {
-    opacity: 100%; }
-  #profile #social img {
-    height: 20px;
-    width: 20px;
-    padding: 20px 27px 0 0; }
-
-#title {
-  font: normal normal bold 30px Roboto;
-  letter-spacing: 0.3em;
-  padding: 10px 0;
-  grid-column: 1/3; }
-
-#experience {
-  background-color: #080808;
-  height: 30vh;
-  width: 600px;
-  margin: 500px auto 150px auto;
-  float: left;
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-auto-rows: minmax(50px, auto);
-  grid-column: 3/4;
-  grid-row: 1/3;
-  justify-self: end; }
-  #experience p {
-    color: #cccccc;
-    font: normal normal 300 11px Roboto;
-    line-height: 160%;
-    letter-spacing: 0.3em; }
-  #experience #date {
-    font: normal normal 300 32px Roboto;
-    letter-spacing: 0.2em;
-    line-height: 120%;
-    width: 53px;
-    justify-self: end;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 2fr; }
+  .aboutDesktop #profile {
     grid-column: 1/2;
-    word-wrap: break-word; }
-  #experience #info {
-    grid-column: 2/3; }
-  #experience #company {
-    font: normal normal 900 14px Roboto;
-    letter-spacing: 0.3em;
-    padding-top: 10px;
-    line-height: 70%; }
-  #experience #role {
-    font: normal normal 400 12px Roboto;
-    letter-spacing: 0.2em;
-    line-height: 200%; }
-
-.achievements {
-  height: 20vh;
-  width: 500px;
-  margin: 225px auto 650px auto;
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-column: 3/4;
-  grid-row: 1/2;
-  grid-auto-rows: minmax(10px, 70px); }
-  .achievements p {
-    text-decoration: none;
-    color: #cccccc;
-    font: normal normal 300 12px Roboto;
-    line-height: 160%;
-    letter-spacing: 0.3em; }
-    .achievements p a {
-      color: #cccccc;
-      text-decoration: none; }
-      .achievements p a:hover {
-        color: white; }
-  .achievements #date2 {
-    font: normal normal 400 20px Roboto;
-    letter-spacing: 0.3em;
-    line-height: 120%;
-    width: 50px;
-    justify-self: end;
-    grid-column: 1/2;
-    word-wrap: break-word; }
-  .achievements #school {
-    font: normal normal 900 14px Roboto;
-    letter-spacing: 0.3em;
-    padding-top: 1px;
-    line-height: 160%; }
+    grid-row: 1/3; }
+  .aboutDesktop #clients {
+    grid-column: 2/3;
+    grid-row: 1/2; }
+  .aboutDesktop #features {
+    grid-column: 2/3;
+    grid-row: 2/3; }
+  .aboutDesktop .section {
+    background-color: transparent;
+    width: 300px;
+    height: max-content;
+    margin: 0 auto;
+    padding: 0 10%; }
+    .aboutDesktop .section .Avatar {
+      border-radius: 50%;
+      height: 200px;
+      width: 200px; }
+    .aboutDesktop .section .name {
+      font: normal normal 700 48px Roboto;
+      letter-spacing: 0.3em;
+      line-height: 90%;
+      height: max-content;
+      width: 200px;
+      padding: 25px 0px; }
+    .aboutDesktop .section .about {
+      font: normal normal 300 11px Roboto;
+      line-height: 172.19%;
+      letter-spacing: 0.25em;
+      width: 270px; }
+    .aboutDesktop .section .email {
+      height: max-content;
+      margin: 10px 0; }
+    .aboutDesktop .section .social {
+      background: transparent; }
+      .aboutDesktop .section .social a {
+        opacity: 70%;
+        text-decoration: none; }
+      .aboutDesktop .section .social :hover {
+        opacity: 100%; }
+      .aboutDesktop .section .social img {
+        height: 20px;
+        width: 20px;
+        padding: 20px 27px 0 0; }
+    .aboutDesktop .section .title {
+      font: normal normal bold 30px Roboto;
+      letter-spacing: 0.3em;
+      padding: 10px 0; }
+    .aboutDesktop .section .content {
+      margin: 0 0 10px 15px; }
+      .aboutDesktop .section .content li {
+        font: normal normal 900 14px Roboto;
+        letter-spacing: 0.3em;
+        padding-top: 10px;
+        line-height: 70%;
+        list-style: none; }
+      .aboutDesktop .section .content h2 {
+        font: normal normal 900 14px Roboto;
+        letter-spacing: 0.3em;
+        padding-top: 1px;
+        line-height: 160%; }
+      .aboutDesktop .section .content p {
+        text-decoration: none;
+        color: #cccccc;
+        font: normal normal 300 12px Roboto;
+        line-height: 160%;
+        letter-spacing: 0.3em; }
+        .aboutDesktop .section .content p a {
+          color: #cccccc;
+          text-decoration: none; }
+          .aboutDesktop .section .content p a:hover {
+            color: white; }
 
 /* GALLERY */
 .gallery {
@@ -537,84 +491,9 @@ footer {
     font: normal normal 300 14px Roboto;
     letter-spacing: 0.1rem; }
 
-@media only screen and (max-width: 1000px) {
-  /* .carousel {
-    max-height: 40vh;
-
-    .pinfo {
-      height: auto;
-      margin: 100px auto;
-      padding: 0;
-
-      display: grid;
-      grid-template-columns: 70% 30%;
-      grid-template-rows: 0.5fr 2fr 0.5fr;
-
-      & img {
-        display: none;
-      }
-    }
-    .ptitle {
-      padding: 0;
-      margin: 0;
-      align-self: end;
-    }
-    .desc {
-      max-width: 1000ch;
-      font: normal normal 300 11px Roboto;
-      margin-left: 30px;
-      margin-top: 8px;
-      grid-column: 1/3;
-    }
-    .pdate {
-      font: normal normal 200 30px Roboto;
-      max-width: 50px;
-      margin: 0;
-      justify-self: end;
-      align-self: flex-start;
-      grid-column: 2/3;
-    }
-    .slash img {
-      width: 50%;
-      align-self: center;
-      justify-self: left;
-    }
-  } */ }
-
 @media only screen and (max-width: 1150px) {
   #page {
     display: initial; }
-  #profile {
-    margin: auto;
-    padding: 0 0 0 30px;
-    justify-self: center; }
-  #about {
-    margin-top: 100px;
-    margin-right: 80px; }
-  #experience {
-    width: auto;
-    max-width: 580px;
-    padding: 0;
-    margin: auto;
-    float: left;
-    float: right; }
-  #date {
-    margin-left: 50px; }
-  #academics {
-    width: 700px;
-    float: left;
-    margin: auto;
-    grid-template-columns: 22% 78%;
-    grid-auto-rows: minmax(50px, auto); }
-  #school {
-    margin-top: 5px; }
-  #date2 {
-    margin-left: 50px;
-    line-height: 10%;
-    letter-spacing: 0.2em;
-    width: 60px;
-    font: normal normal 300 31.5px Roboto;
-    letter-spacing: 0.2em; }
   .carousel {
     max-height: 55vh; } }
 
@@ -771,80 +650,8 @@ footer {
         grid-column: 2/3; }
   .autoSlides {
     width: 100%; }
-  #page {
-    display: block;
-    position: static;
-    overflow: hidden;
-    height: 100%;
-    max-height: 1050px; }
-  #profile {
-    position: relative;
-    height: 220px;
-    /* width: 400px; */ }
-    #profile #Avatar {
-      padding: 20px 0 5px 0;
-      height: 100px;
-      width: 100px; }
-    #profile #about {
-      display: flex;
-      float: left;
-      width: 28%;
-      height: 30%;
-      padding: 0;
-      margin: 70px 30px auto 50px;
-      font: normal normal 300 9px Roboto;
-      line-height: 150%; }
-      #profile #about img {
-        height: 65px;
-        padding: 0 20px 0px 0px; }
-      #profile #about text {
-        top: 50px; }
-    #profile #name {
-      font-size: 45px;
-      height: auto;
-      width: 50%;
-      padding: 8px 0px;
-      color: #ffffff; }
-    #profile #social {
-      width: 100%; }
-      #profile #social a {
-        opacity: 1; }
-  #experience {
-    position: relative;
-    height: 100%;
-    margin: 100px auto 10px auto;
-    padding-right: 8px;
-    grid-column: 1/2;
-    grid-row: 2/3;
-    grid-auto-rows: minmax(auto, auto);
-    color: #ffffff; }
-    #experience #date {
-      font: normal normal 400 25px "Roboto";
-      letter-spacing: 0.3em;
-      width: 45px; }
-  .achievements {
-    position: relative;
-    margin: 100px auto 500px auto;
-    padding-right: 8px;
-    height: 100%;
-    width: 100%;
-    grid-column: 1/2;
-    grid-row: 2/3;
-    grid-auto-rows: minmax(auto, auto);
-    color: #ffffff; }
-    .achievements #date2 {
-      font: normal normal 400 25px Roboto;
-      padding-bottom: 20px; }
-    .achievements p {
-      color: #cccccc;
-      font: normal normal 300 12px Roboto;
-      line-height: 160%;
-      letter-spacing: 0.2em; }
-    .achievements #school {
-      font: normal normal 900 12px Roboto;
-      letter-spacing: 0.2em;
-      padding: 0;
-      line-height: 100%; }
+  .aboutDesktop {
+    display: block; }
   .gallery {
     margin-top: 20px;
     display: block; }
