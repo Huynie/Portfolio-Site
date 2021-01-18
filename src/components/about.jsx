@@ -41,26 +41,29 @@ export default function About () {
                     </div>
                 </div>
                 <br/>
-                <div className="section" id="clients">
-                    <div className="title">Clients</div>
-                    <ul className="content">
-                        <li>X-ite Labs</li>
-                        <li>Neom</li>
-                        <li>Holospark</li>
-                        <li>Rust Ltd</li>
-                        <li>Bound</li>
-                        <li>Mohawk Group</li>
-                        <li>By-Dzign</li>
-                    </ul>
-                </div>
-                <br/>
-                <div className="section" id="features">
-                    <div className="title">Features</div>
-                    <div className="content">
-                        <h2 className="school">Voyage LA Featured Artist</h2>
-                        <p><a href="http://voyagela.com/interview/meet-huy-chau/">voyagela.com/interview/meet-huy-chau/</a></p>
+                <div>
+                    <div className="section" id="clients">
+                        <div className="title">Clients</div>
+                        <ul className="content">
+                            <li>X-ite Labs</li>
+                            <li>Neom</li>
+                            <li>Holospark</li>
+                            <li>Rust Ltd</li>
+                            <li>Bound</li>
+                            <li>Mohawk Group</li>
+                            <li>By-Dzign</li>
+                        </ul>
+                    </div>
+                    <br/>
+                    <div className="section" id="features">
+                        <div className="title">Features</div>
+                        <div className="content">
+                            <h2 className="school">Voyage LA Featured Artist</h2>
+                            <p><a href="http://voyagela.com/interview/meet-huy-chau/">voyagela.com/interview/meet-huy-chau/</a></p>
+                        </div>
                     </div>
                 </div>
+                
             </main>
             <br/>
             <Footer/>
