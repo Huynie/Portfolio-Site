@@ -1,3 +1,6 @@
+require("dotenv").config({
+  path:`.env.${process.env.NODE_ENV}`,
+})
 module.exports = {
   siteMetadata: {
     title: "Art Portfolio",
@@ -6,7 +9,7 @@ module.exports = {
     {
       resolve: "gatsby-source-contentful",
       options: {
-        accessToken: "vaMr6XX2732cCq8DkDwmhP4GrZPMNLuY-kzvpvd6tZE",
+        accessToken: process.env.ACCESS_TOKEN,
         spaceId: "9cds6kneqq0m",
       },
     },

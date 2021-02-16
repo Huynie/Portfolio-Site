@@ -1,0 +1,107 @@
+/* ABOUT */
+.light {
+  font: normal normal 300 11px Roboto;
+  letter-spacing: 0.25em;
+  line-height: 0.25em;
+}
+.regular {
+  font: normal normal 700 12px Roboto;
+  letter-spacing: 0.3em;
+  line-height: 3em;
+}
+.bold {
+  font: normal normal 700 12px Roboto;
+  letter-spacing: 0.3em;
+}
+.aboutDesktop {
+  max-width: 700px;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+
+  .section {
+    background-color: transparent;
+    width: 300px;
+    height: max-content;
+    margin: 0 auto;
+    padding: 0 10%;
+
+    .Avatar {
+      border-radius: 50%;
+      height: 200px;
+      width: 200px;
+    }
+    .name {
+      font: normal normal 700 48px Roboto;
+      letter-spacing: 0.3em;
+      line-height: 90%;
+      height: max-content;
+      width: 200px;
+      padding: 25px 0px;
+    }
+    .about {
+      font: normal normal 300 11px Roboto;
+      line-height: 172.19%;
+      letter-spacing: 0.25em;
+      width: 270px;
+    }
+    .email {
+      height: max-content;
+      margin: 10px 0;
+    }
+    .social {
+      background: transparent;
+      a {
+        opacity: 70%;
+        text-decoration: none;
+      }
+      :hover {
+        opacity: 100%;
+      }
+
+      img {
+        height: 20px;
+        width: 20px;
+        padding: 20px 27px 0 0;
+      }
+    }
+
+    .title {
+      font: normal normal bold 30px Roboto;
+      letter-spacing: 0.3em;
+      padding: 10px 0;
+    }
+    .content {
+      margin: 0 0 10px 15px;
+      li {
+        font: normal normal 900 14px Roboto;
+        letter-spacing: 0.3em;
+        padding-top: 10px;
+        line-height: 70%;
+        list-style: none;
+      }
+      h2 {
+        font: normal normal 900 14px Roboto;
+        letter-spacing: 0.3em;
+        padding-top: 1px;
+        line-height: 160%;
+      }
+      p {
+        text-decoration: none;
+        color: $font-color;
+        font: normal normal 300 12px Roboto;
+        line-height: 160%;
+        letter-spacing: 0.3em;
+
+        a {
+          color: $font-color;
+          text-decoration: none;
+
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
