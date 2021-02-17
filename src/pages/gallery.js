@@ -4,6 +4,8 @@ import { Link } from 'gatsby';
 import Image from 'gatsby-image';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
+import '../layout.css';
+
 
 const Gallery = () => {
   if (typeof window === "undefined") {

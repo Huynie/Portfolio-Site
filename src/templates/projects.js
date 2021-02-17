@@ -8,6 +8,7 @@ import Divider from '../assets/Divider.svg';
 import DividerDbl from '../assets/Divider_dbl.svg';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
+import '../layout.css';
 
 const Project = ({data:{
     project:{
