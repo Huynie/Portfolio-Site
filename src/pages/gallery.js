@@ -7,9 +7,6 @@ import Footer from '../components/footer';
 import '../layout.css';
 
 const Gallery = () => {
-  // if (typeof window === "undefined") {
-  //   return <p>Loading</p>
-  // };
   const {gallery:{nodes}} = useStaticQuery(graphql`
     {
       gallery: allContentfulGallery {
