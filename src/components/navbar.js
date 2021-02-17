@@ -5,7 +5,7 @@ import { Link } from "gatsby";
 export default function NavBar() {
     // change nav logo to page title
     // const pageTitle = document.querySelector('nav .logo');
-    const pathname = window.location.pathname.substring(1);
+    // const pathname = window.location.pathname.substring(1);
 
 
     return(
@@ -14,7 +14,7 @@ export default function NavBar() {
                 <Link className="logo" to='/'>Huy Chau</Link>
                 <h4 className="pageTitle">
                     <img src={Divider} alt="#"/>
-                    {pathname}
+                    {/* {pathname} */}
                 </h4>
                 <input className="toggle" type="checkbox"></input>
                 <div className="hamburger">

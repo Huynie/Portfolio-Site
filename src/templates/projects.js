@@ -1,15 +1,11 @@
 import React, { useEffect, useRef } from "react";
-import { useStaticQuery, graphql } from "gatsby";
+import { graphql } from "gatsby";
 import Image from 'gatsby-image';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/themes/splide-default.min.css';
-// import { carousel } from '../components/carousel';
 import { lightbox } from '../components/lightbox';
-import { description } from '../components/description';
 import Divider from '../assets/Divider.svg';
 import DividerDbl from '../assets/Divider_dbl.svg';
-import ArrowL from '../assets/Arrow_L.svg';
-import ArrowR from '../assets/Arrow_R.svg';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 
@@ -21,7 +17,9 @@ const Project = ({data:{
         info:{info}
     }}
 }) => {
-    
+    if (typeof window === "undefined") {
+        return <p>Server Render</p>
+      }
     const secondaryRef = useRef();
     const primaryRef = useRef();
 
@@ -35,8 +33,8 @@ const Project = ({data:{
             arrow.setAttribute('height', '100');
             arrow.setAttribute('width', '100');
         });
-            lightbox();
-            return () => {
+        lightbox();
+        return () => {
             lightbox();
         }
     },[]);
