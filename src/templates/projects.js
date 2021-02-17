@@ -37,11 +37,14 @@ const Project = ({data:{
             arrow.setAttribute('height', '100');
             arrow.setAttribute('width', '100');
         });
+    },[]);
+    
+    useEffect(() => {
         lightbox();
         return () => {
-            lightbox();
-        }
-    },[]);
+          lightbox();
+      };
+    });
     
     // MULTIPLE DESCRIPTION
     // useEffect(()=>{
