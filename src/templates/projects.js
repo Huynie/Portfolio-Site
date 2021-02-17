@@ -8,7 +8,7 @@ import Divider from '../assets/Divider.svg';
 import DividerDbl from '../assets/Divider_dbl.svg';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
-import '../layout.css';
+// import '../layout.css';
 
 const Project = ({data:{
     project:{
@@ -21,9 +21,9 @@ const Project = ({data:{
     // When HTML build takes place during gatsby build
     // it will return 'Server Render' instead of 'undefined'
     // comment this code out during development
-    if (typeof window === "undefined") {
-        return <p>Server Render</p>
-    };
+    // if (typeof window === "undefined") {
+    //     return <p>Server Render</p>
+    // };
 
     const primaryRef = useRef();
     const secondaryRef = useRef();
