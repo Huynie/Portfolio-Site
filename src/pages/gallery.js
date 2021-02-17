@@ -23,7 +23,7 @@ const Gallery = () => {
   `)
   return (
     <>
-    <Navbar/>
+    <Navbar pageTitle='Gallery'/>
       <div className="gallery">
         {nodes.map((project, idx) => {
             return(

@@ -17,12 +17,16 @@ const Project = ({data:{
         info:{info}
     }}
 }) => {
+    // When HTML build takes place during gatsby build
+    // it will return 'Server Render' instead of 'undefined'
+    // comment this code out during development
     if (typeof window === "undefined") {
         return <p>Server Render</p>
-      }
-    const secondaryRef = useRef();
-    const primaryRef = useRef();
+    };
 
+    const primaryRef = useRef();
+    const secondaryRef = useRef();
+    
     useEffect(() => {
         //Sync Splide thumbnail to Splide Carousel
         primaryRef.current.sync(secondaryRef.current.splide);
@@ -51,7 +55,7 @@ const Project = ({data:{
 
   return (
       <>
-        <Navbar/>
+        <Navbar pageTitle={title}/>
             <div className="carousel mobileContainer">
                 <Splide
                     className='mainCarousel'
@@ -119,9 +123,6 @@ const Project = ({data:{
                                         position: 'static',
                                         objectPosition: "50% 50%",
                                         height: '50%'
-                                    }}
-                                    imgStyle={{
-                                        // height: 'auto'
                                     }}
                                     fluid={image.fluid} alt="#"/>
                             </SplideSlide>

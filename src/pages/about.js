@@ -12,7 +12,7 @@ export default function About () {
     
     return(
         <>
-            <NavBar/>
+            <NavBar pageTitle='About'/>
             <br/>
             <main className="aboutDesktop">
                 <div className="section" id="profile">
