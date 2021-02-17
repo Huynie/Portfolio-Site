@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 import Image from 'gatsby-image';
 import {slideShowLoop} from '../components/slideShow';
 import Divider from '../assets/Divider.svg';
-// import '../layout.css';
+import '../layout.css';
 
 export default function Home() {
   const {gallery:{nodes}} = useStaticQuery(graphql`

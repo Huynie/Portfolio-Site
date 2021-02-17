@@ -1,5 +1,5 @@
 import React from 'react';
-import '../layout.css';
+// import '../layout.css';
 import Home from './home';
 // import Gallery from './gallery';
 // import About from './about';

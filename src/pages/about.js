@@ -7,7 +7,7 @@ import FB from '../assets/fb_white.png';
 import LI from '../assets/li_white.png';
 import AS from '../assets/as_white.png';
 import Avatar from '../assets/avatar.png';
-// import '../layout.css';
+import '../layout.css';
 
 export default function About () {
     
