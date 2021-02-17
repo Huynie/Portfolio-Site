@@ -21,9 +21,9 @@ const Project = ({data:{
     // When HTML build takes place during gatsby build
     // it will return 'Server Render' instead of 'undefined'
     // comment this code out during development
-    // if (typeof window === "undefined") {
-    //     return <p>Server Render</p>
-    // };
+    if (typeof window === "undefined") {
+        return <p>Server Render</p>
+    };
 
     const primaryRef = useRef();
     const secondaryRef = useRef();
