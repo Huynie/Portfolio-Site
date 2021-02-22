@@ -30,12 +30,12 @@ export default function About () {
                         <a href="https://www.artstation.com/huynie">
                             <img src={AS} alt="artstation"/>
                         </a>
-                        <a href="https://www.linkedin.com/in/huynie">
+                        {/* <a href="https://www.linkedin.com/in/huynie">
                             <img src={LI} alt="linkedIn"/>
-                        </a>
-                        <a href="https://www.facebook.com/huy.chau.125">
+                        </a> */}
+                        {/* <a href="https://www.facebook.com/huy.chau.125">
                             <img src={FB} alt="facebook"/>
-                        </a>
+                        </a> */}
                         <a href="https://twitter.com/Huynie">
                             <img src={TW} alt="twitter"/>
                         </a>
