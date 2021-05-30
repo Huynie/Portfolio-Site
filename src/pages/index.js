@@ -1,8 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { Link } from 'gatsby';
-import Image from 'gatsby-image';
-import {slideShowLoop} from '../components/slideShow';
+import SlideShow from '../components/slideShow';
 import Divider from '../assets/Divider.svg';
 import '../layout.css';
 
@@ -21,16 +20,6 @@ export default function Home() {
     }
   `)
 
-  // start slideshow loop
-  useEffect(() => {
-    if (document.querySelectorAll('.autoSlides__slides')){
-        slideShowLoop();
-    }
-    return () => {
-        slideShowLoop();
-    }
-  }, []);
-
 return(
     <>
         <nav className="home">
@@ -44,22 +33,7 @@ return(
                     <li><Link to='/about'>About</Link></li>
                 </ul>
         </nav>
-        <div className="autoSlides">
-            {nodes.map((project, idx) => {
-                return(
-                    <picture key={idx}>
-                        <source media="(max-width: 600px)"
-                                srcSet={project.image.fluid}/>
-                        <Image
-                            key={idx} 
-                            className="autoSlides__slides" 
-                            fluid={project.image.fluid}
-                            alt="#"/>            
-                    </picture>
-                )
-            })}
-            
-        </div>
+        <SlideShow slides={nodes}/>
     </>
     
 )

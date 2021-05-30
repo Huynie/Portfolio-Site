@@ -21,9 +21,9 @@ const Project = ({data:{
     // When HTML build takes place during gatsby build
     // it will return 'Server Render' instead of 'undefined'
     // comment this code out during development
-    if (typeof window === "undefined") {
-        return <p>Server Render</p>
-    };
+    // if (typeof window === "undefined") {
+    //     return <p>Server Render</p>
+    // };
 
     const primaryRef = useRef();
     const secondaryRef = useRef();
@@ -59,7 +59,11 @@ const Project = ({data:{
 
   return (
       <>
-        <Navbar pageTitle={title}/>
+        { typeof window === "undefined" ? 
+            <p>Server Render</p>
+            :
+            <>
+            <Navbar pageTitle={title}/>
             <div className="carousel mobileContainer">
                 <Splide
                     className='mainCarousel'
@@ -159,6 +163,8 @@ const Project = ({data:{
                 </div>
             </div>
         <Footer/>
+        </>
+        }
     </>
   )
 }
