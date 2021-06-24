@@ -22,6 +22,7 @@ const Gallery = () => {
       }
     }
   `)
+  console.log(nodes)
   return (
     <>
     <Navbar pageTitle='Gallery'/>

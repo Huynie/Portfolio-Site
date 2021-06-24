@@ -7,7 +7,7 @@ export default function NavBar({pageTitle}) {
     return(
         <>
              <nav>
-                <Link className="logo" to='/concepts'>Huy Chau</Link>
+                <Link className="logo" to='/'>Huy Chau</Link>
                 <h4 className="pageTitle">
                     <img src={Divider} alt="#"/>
                     {pageTitle}
@@ -18,7 +18,7 @@ export default function NavBar({pageTitle}) {
                 </div>
                 <ul className="menu" id="menu">
                     {/* <li className="menu__item" id="isHidden"><Link to={{pathname:"/"}}>Home</Link></li> */}
-                    <li className="menu__item"><Link to='/concepts/gallery'>Gallery</Link></li>
+                    <li className="menu__item"><Link to='/gallery'>Gallery</Link></li>
                     <li className="menu__item"><Link to='/about'>About</Link></li>
                     <img className="slash" src={Divider} alt="#"/>
                 </ul>
